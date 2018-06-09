@@ -1,0 +1,92 @@
+<resources>
+    <string name="app_name">AIG</string>
+    <string name="tenhoconta">Já tenho uma conta</string>
+    <string name="welcomeString">Bem vindo ao AIG</string>
+    <string name="settings">Configurações</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="mercadodeacoes">O mercado de ações é um ambiente aonde se é negociado ativos, como ações e fundos imobiliários, boa parte das negociações deste mercado são feitas pela bolsa de valores, contudo, pode muito bem ocorrer em outros locais, um exemplo disso é o mercado de balcão, onde se negociam algun
+        s títulos que não são negociáveis na bolsa de valores.</string>
+    <string name="paraquemomercado">Se você for uma empresa: Quando a empresa tem um projeto em mãos ou precisa de dinheiro para algum investimento ou dívida porem não possui dinheiro ela pode colocar suas ações para a venda em troca de capital (dinheiro), possibilitando assim a realização de seus projetos, pagamentos de suas dívidas ou qualquer coisa que precise se fazer.
+Se você for um investidor: Ao comprar ações de uma empresa o investidor vira sócio da mesma tem direito a participar das divisões de seus lucros sem que seja necessário administrar ou tomar alguma decisão na empresa. Assim sendo seu capital pode ser multiplicado somente pela valorização das ações que comprou.
+</string>
+
+    <string name="mercadodecapitais">“O mercado de capitais é um mecanismo de distribuição de valores mobiliários, que tem o objetivo de gerar liquidez aos títulos emitidos pelas empresas e viabilizar o seu processo de capitalização”. Podemos dizer assim que o mercado de capitais tem como seu principal objetivo:” direcionar os recursos da sociedade para o comércio, a indústria e outras atividades econômicas”, fazendo com que a sociedade invista seus recursos no mercado, fazendo com que a economia do pais cresça e com isso remunerando melhor o investidor.
+O mercado de capitais tem em sua estrutura três principais modelos de composição, os quais são bolsas de valores, sociedades corretoras e outras instituições financeiras autorizadas. Os quais negociam os principais ativo do mercado de capitais.
+Os principais ativos do mercado de capitais
+
+•	Ações – “Ação é a menor parcela do capital social das companhias ou sociedades anônimas”.
+•	Commercial Papers – Commercial Papers ou promissória comercial é um documento no qual o devedor (empresa) tem o compromisso de quitar a divida da promissória, quando um investidor compra uma nota promissória comercial ele esta de um certa forma emprestando dinheiro para a empresa, a qual devera pagar os recursos emprestados pelo investidor no prazo, condições e garantias predeterminados na emissão da nota promissória.
+•	Debêndure – O debêndure é uma promissória emitida por uma sociedade de ação, que assegura aos detentores o direito a um credito contra a companhia. O debêndore tem praticamente as mesmas características da Commercial Papers (promissórias comercial) porem seu tempo de devolução é maior.
+
+Mercado de capitais primários e secundários
+Uma explicação mais justificativa do mercado primaria, seria que nele ocorre a primeira emissão de um titulo e o primeiro negocio, o patrimônio recebido é direcionado para a empresa ou para o banco, é com isto que as empresas conseguem um financiamento para seus investimentos e também seria com isto que os bancos conseguem capital para investir em uma empresa.
+Já o mercado de capitais secundário é onde os títulos são negociados de um proprietário para o outro, ocorrendo assim uma liquides nos títulos, neste momento os patrimônios recebidos não são mais direcionados nem a empresa e nem ao banco, mas sim para o dono do título.
+</string>
+
+    <string name="comoinvestir">Antes de começar a falar de como investir, devemos saber o que é investimentos: são nada mais é que qualquer desembolso que produza expectativa de ganho futuro. Nesta linha, podem ser consideradas diferentes formas de capital como intelectual, social e natural. Por exemplo, dedicar tempo ao estudo para desenvolver conhecimento sobre determinado assunto, assim como, plantar uma árvore para colher frutos no futuro – ambos podem ser entendidos como formas de investimentos.
+Em termos financeiros, investimento é aplicar o seu dinheiro de forma que ele gere rendimentos no futuro. É uma ótima maneira de colocar a seu dinheiro para trabalhar para você: quando você investe, o seu dinheiro passa a gerar ganhos permitindo que você se beneficie do efeito dos juros compostos  resultando em uma renda extra. E isso, sem que você precise trabalhar mais no seu emprego ou ganhar um aumento.
+</string>
+
+    <string name="porqueabolsadevalores">Antes de começar a falar de como investir, devemos saber o que é investimentos: são nada mais é que qualquer desembolso que produza expectativa de ganho futuro. Nesta linha, podem ser consideradas diferentes formas de capital como intelectual, social e natural. Por exemplo, dedicar tempo ao estudo para desenvolver conhecimento sobre determinado assunto, assim como, plantar uma árvore para colher frutos no futuro – ambos podem ser entendidos como formas de investimentos.
+Em termos financeiros, investimento é aplicar o seu dinheiro de forma que ele gere rendimentos no futuro. É uma ótima maneira de colocar a seu dinheiro para trabalhar para você: quando você investe, o seu dinheiro passa a gerar ganhos permitindo que você se beneficie do efeito dos juros compostos  resultando em uma renda extra. E isso, sem que você precise trabalhar mais no seu emprego ou ganhar um aumento.
+</string>
+    <string name="processodequeda">Uma das dúvidas mais comum é o que significa quando dizemos que a bolsa esteve
+        em queda ou em alta, podemos dizer que a bolsa de valores segue a regra de oferta e demanda, ou seja, quanto mais indivíduos compram uma ação, mais caro se torna está ação, já se muitos indivíduos venderem suas ações, mais barata se torna está ação, quando um destes fatores ocorre há uma queda ou alta na bolsa de valores.</string>
+    <string name="noticiasdamidia">Muitos tentam entender o porque as noticias políticas influênciam na bolsa de valores, porem o fator seria que a política demonstra como o pias esta, ou seja, a política é uma espécie de propaganda do País onde se localiza a empresa para os investidores em geral. Sendo assim se a política do P
+        aís não estiver bem, provável haverá uma queda nas ações das empresas localizadas nele.</string>
+
+    <string name="comolucrar">Atualmente muitas pessoas não tem o conhecimento de que ao investirem seu capital, na bolsa de valores, podem através disso aumentar seu capital, através do conhecimento analítico de demonstração de ações.
+Infelizmente na bolsa de valores não existem formulas mágicas de ganhar dinheiro, porem atualmente existem certas estratégias que são eficientes que podem permitir a quem as utilize ganhar dinheiro ao longo do tempo, estas pessoas devem ter persistência e paciência. Pois uma ação que hoje esta sendo valorizada, no outro pode sofrer uma queda brusca, por conta disso um investidor deve sempre estar preparado para lidar com os piores cenários.
+</string>
+    <string name="principaisestrategy">A forma mais eficaz de ganhar na bolsa de valores seria comprando uma ação e sua valorização, a qual muda, tanto decaindo quanto subindo. “Por exemplo, você compra as ações de uma empresa por R$ 30,00 e depois as vende por R$ 40,00. O lucro que você obtém são os R$ 10,00 de diferença, multiplicado pela quantidade de ações que você comprou.”
+Esta é a principal estratégia que é utilizada por investidores para que aja uma lucratividade no investimento, o qual foi colocado em uma ação. Os dividendos também seriam uma forma de ganhar dinheiro, através dos proventos, os quais fazem parte do lucro da empresa que é paga aos acionistas na forma de Dividendos e de Juros sob Capital Próprio (JCP).
+</string>
+    <string name="analisedeacoes">A análise de ações tem como objetivo identificar as melhores empresas para investir, tendo também qual o melhor momento para se vender ou comprar uma ação de determinada empresa. Com isso em mente muitos investidores conseguem se dar bem no mercado de ações.
+“As análises não são utilizadas com o intuito de prever o que vai acontecer, mas sim reagir aos sinais e as informações que nós temos para poder investir do lado do cenário de maior probabilidade e, mais importante do que isso, ter poder de reação para saber lidar com os cenários de adversidade.”
+</string>
+
+    <string name="fatoresinternos">Os fatores internos são os colaboradores, produção em geral, maquinários, capacidade produtiva etc. Os fatores internos de uma empresa são importantes para planejar diversos fatores como, por exemplo:
+•	Controle de pedido;
+•	Analisar terceirização;
+•	Necessidade de contratação ou demissão;
+•	Controle salarial e remuneração;
+•	Visão;
+•	Missão;
+•	Valores;
+•	Ética;
+•	Delegar ações;
+</string>
+    <string name="delegaracoes">É consenso na administração que um líder deve saber delegar. Há pessoas que são muito produtivas individualmente e por isso são promovidas. Mas, mesmo sendo competentes, elas nem sempre sabem como liderar suas equipes, principalmente po
+        r não saber repassar atividades que fazia tão bem antes da promoção.</string>
+    <string name="objetivoempresa">A busca por resultados positivos e aumento de receita em meio a alta competitividade do mercado fez com que empresas começassem a atuar seguindo um conjunto de características próprias que facilitam sua diferenciação entre as demais organizações do setor. Essas características são co
+        nhecidas como: missão, visão e valores conforme falado anteriormente.</string>
+    <string name="fatoresexternos">O que são fatores externos?
+São todos os acontecimentos fora da empresa que influenciam direta ou indiretamente os lucros da empresa, como:
+A concorrência, os fornecedores, os clientes, em fim todo o envolvimento do negócio externo que proporciona o andamento do mercado. Para saber o fator externo da empresa deve-se entender bem alguns conceitos:
+•	Mercado: mercado é a relação entre a oferta e a procura. Também a composição de pessoas ou empresas que querem comprar bens ou serviços;
+•	Fornecedores: Com fornecedores deve-se estabelecer um tratamento dinâmico, gerando uma relação de ganho mútuo;
+•	Clientes: Os clientes são o coração do negócio, sem clientes a organização não pode sobreviver, é preciso que a empresa conheça muito bem as necessidades do consumidor, para oferecer produtos ou serviços que sejam aceitos pelo mercado;
+•	Concorrência: Os concorrentes são uma força importante que nos move a oferecer melhores produtos com o maior valor para os nossos clientes, trata-se de ganhar a preferência dos consumidores superando a oferta de outras empresas do mercado
+</string>
+
+    <string name="tomardecisoes">Pode-se dividir os investidores em três categoria distintas: Arrojados, Moderados e Conservadores. Estas categorias estão relacionadas com fatores tais como: idade, estado civil, se o investidor tem filhos e etc.Segundo Cavalcante et al. (2005), o grau de aversão ao risco de cada investidor depende de suas características pessoais e do seu momento de vida. É importante que o investidor analise detalhadamente sua capacidade de resistir a eventuais variações de ganho e perda em investimentos antes de montar sua estratégia.
+Para tomar uma decisão, o investidor passa por algumas etapas até chegar à opção escolhida. Essas etapas ocorrem devido à existência de inúmeras variáveis a serem avaliadas na escolha do ativo ser escolhido
+</string>
+    <string name="reconhecerproblema">O processo decisório s
+        e inicia quando o investidor observa que há um problema a ser resolvido ou necessidade a ser satisfeita. No caso do investidor, a necessidade a ser satisfeita seria buscar a melhor opção de investimento, com o objetivo de obter maior lucro.</string>
+    <string name="bucadeinfo">Sheth, Mittal e Newman (2001), afirmam que uma vez que investidor reconhece a necessidade se inicia a busca por informações sobre várias formas de resolver o problema em questão. Essa busca raramente inclui todas as formas existentes investimento. O investidor somente leva em conta um grupo de ativos que
+        ele se lembra.</string>
+    <string name="escolha">O consumidor pré-seleciona algumas opções de maior interesse para serem comparados, fatores como marca, preço, cultura, recursos disponíveis e classe social, são comparados detalhadamente. No caso do investidor são avaliadas as taxas, risco, liquidez, rentabilidade envolvida
+        em cada opção de investimento.</string>
+    <string name="compra">Quando o investidor já tem definido o produto que vai comprar, sendo assim ele coloca em sua mente “é esse o produto que prefiro”. No caso do Investidor, nessa etapa o investimento já foi definido, somente faltando a intenção real de investir. Na próxima etapa o cliente cria uma intenção de compra e surge em sua mente um lembrete “Coisas a se fazer”, “na próxima vez que eu tiver a oportunidade vou compra-lo”.
+Já na fase final desse processo o cliente programa a compra e isso remetem a:
+“Arranjar os termos da transação, buscar e obter do vendedor a transferência de direito ou título, pagar pelo produto ou serviço, ganhar posse do produto ou compromisso de serviço de vendedor”.
+</string>
+    <string name="excessodeconfianca">Barber e Odean observam que homens são mais afetados por esse fenômeno que as mulheres quando se trata de investimentos. Em sua pesquisa esse fator supostamente levou os homens a negociarem 45% a mais do que as mulheres e por consequências dos custos e taxas e transação o retorno liquido de suas carteiras foi
+        aproximadamente 1% menor.</string>
+
+</resources>

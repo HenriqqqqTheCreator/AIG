@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "574622784433",
+    "firebase_url": "https://aig-fb.firebaseio.com",
+    "project_id": "aig-fb",
+    "storage_bucket": "aig-fb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:574622784433:android:554a73c16b7fb0ef",
+        "android_client_info": {
+          "package_name": "zapzap.cursoandroid.com.aig"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "574622784433-sg6kq1doqo2a77dktrf5hpodnvtbomhd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "zapzap.cursoandroid.com.aig",
+            "certificate_hash": "51add4268fd4dc705364a3bcaa7e3adbf5f4402b"
+          }
+        },
+        {
+          "client_id": "574622784433-dt5i5s1fi67j03miepccnk82rb6e6uhh.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "574622784433-dt5i5s1fi67j03miepccnk82rb6e6uhh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDq-emmwG1LlhXtKZsAMpkE2irlirfPSbY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "574622784433-dt5i5s1fi67j03miepccnk82rb6e6uhh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

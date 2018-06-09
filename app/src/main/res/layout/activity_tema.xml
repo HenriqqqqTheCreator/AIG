@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/linearLayoutTema"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="zapzap.tccetec.com.aig.licao.TemaActivity"
+    android:background="@color/fundoFragment"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="175dp"
+            android:background="#2d2d2d"
+            android:id="@+id/temathumbnail"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:id="@+id/text_view_temaScore"
+            android:text="TEXTO NAO ALTERADO"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="30sp"
+            android:fontFamily="@font/quicksand_medium"
+            android:elevation="10dp"
+
+            />
+
+        <!--<TextView
+            android:id="@+id/temaCategoria"
+            android:layout_width="wrap_conten
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#af6600"
+            android:padding="8dp"
+            android:text="Iniciante" />-->
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/listviewLicoes"
+            />
+
+
+</LinearLayout>

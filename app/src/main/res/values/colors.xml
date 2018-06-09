@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0039cb</color>
+    <color name="colorPrimaryDark">#001056</color>
+    <color name="colorAccent">#d4d8f3</color>
+    <color name="backgroundColor">#C5CAE9</color>
+    <color name="colorPrimaryDarkSec">#001987</color>
+    <color name="backgroudFragment">#2a3153</color>
+    <color name="cardInicianteClaro">#61fff7</color>
+    <color name="cardInicianteEscuro">#505a6d</color>
+    <color name="cardIntermediario">#ffae3d</color>
+    <color name="cardImage">#8d929c</color>
+    <color name="fundoFragment">#e4edfc</color>
+    <color name="branco">#b3cefb</color>
+    <color name="brancodeVDD">#FFFFFF</color>
+    <color name="iniciante">#0fab30</color>
+    <color name="intermediario">#fd7b01</color>
+    <color name="avancado">#630808</color>
+</resources>

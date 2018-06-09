@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/fundoFragment"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="zapzap.tccetec.com.aig.licao.LicaoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorAccent"
+        android:elevation="2dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/tvLicaoTitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="AAAAAAAAAAAAAAAAAA"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="21sp" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="10dp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/tvLicaoTexto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/quicksand"
+                android:foregroundGravity="center_horizontal"
+                android:lineSpacingExtra="8sp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_dark"
+                android:textSize="16sp"
+                android:typeface="normal" />
+
+            <TextView
+                android:id="@+id/tvLicaoSubTitulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/quicksand_medium"
+                android:foregroundGravity="center_horizontal"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="20dp"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_dark"
+                android:textSize="18sp"
+                android:typeface="normal" />
+
+            <TextView
+                android:id="@+id/tvLicaoTextoDois"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/quicksand"
+                android:foregroundGravity="center_horizontal"
+                android:lineSpacingExtra="8sp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_dark"
+                android:textSize="16sp"
+                android:typeface="normal" />
+
+            <TextView
+                android:id="@+id/tvLicaoSubTituloDois"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/quicksand_medium"
+                android:foregroundGravity="center_horizontal"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="20dp"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_dark"
+                android:textSize="18sp"
+                android:typeface="normal" />
+
+            <TextView
+                android:id="@+id/tvLicaoTextoTres"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/quicksand"
+                android:foregroundGravity="center_horizontal"
+                android:lineSpacingExtra="8sp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_dark"
+                android:textSize="16sp"
+                android:typeface="normal" />
+
+            <TextView
+                android:id="@+id/tvLicaoSubTituloTres"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/quicksand_medium"
+                android:foregroundGravity="center_horizontal"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="20dp"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_dark"
+                android:textSize="18sp"
+                android:typeface="normal" />
+
+            <TextView
+                android:id="@+id/tvLicaoTextoQuatro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/quicksand"
+                android:foregroundGravity="center_horizontal"
+                android:lineSpacingExtra="8sp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_dark"
+                android:textSize="16sp"
+                android:typeface="normal" />
+
+            <TextView
+                android:id="@+id/tvLicaoSubTituloQuatro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/quicksand_medium"
+                android:foregroundGravity="center_horizontal"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="20dp"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_dark"
+                android:textSize="18sp"
+                android:typeface="normal" />
+
+            <TextView
+                android:id="@+id/tvLicaoTextoCinco"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/quicksand"
+                android:foregroundGravity="center_horizontal"
+                android:lineSpacingExtra="8sp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_dark"
+                android:textSize="16sp"
+                android:typeface="normal" />
+
+            <TextView
+                android:id="@+id/tvLicaoSubTituloCinco"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/quicksand_medium"
+                android:foregroundGravity="center_horizontal"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="20dp"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_dark"
+                android:textSize="18sp"
+                android:typeface="normal" />
+
+            <TextView
+                android:id="@+id/tvLicaoTextoSeis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/quicksand"
+                android:foregroundGravity="center_horizontal"
+                android:lineSpacingExtra="8sp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_dark"
+                android:textSize="16sp"
+                android:typeface="normal" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
