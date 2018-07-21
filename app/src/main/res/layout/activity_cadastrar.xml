@@ -1,57 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fundoantigodoaig"
+    android:background="@drawable/fundoaig"
     tools:context="zapzap.tccetec.com.aig.CadastrarActivity">
 
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
         android:fontFamily="@font/quicksand_medium"
         android:text="AIG"
         android:textColor="#FFFFFF"
-        android:textSize="40sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.103" />
+        android:layout_gravity="center_horizontal"
+        android:textSize="40sp" />
 
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
         android:fontFamily="@font/quicksand_light"
         android:text="Criar uma nova conta no"
         android:textColor="#FFFFFF"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.015" />
+        android:textSize="30sp" />
 
     <EditText
         android:id="@+id/editNomeCadastroID"
         android:layout_width="298dp"
+        android:layout_marginTop="60dp"
         android:layout_height="40dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="152dp"
+        android:layout_gravity="center_horizontal"
         android:backgroundTint="#00ffffff"
         android:drawablePadding="5dp"
         android:drawableStart="@drawable/ic_person_outline"
@@ -59,47 +43,15 @@
         android:fontFamily="@font/quicksand_medium"
         android:hint="Seu nome"
         android:inputType="textPersonName"
-        android:textAlignment="textStart"
         android:textColorHint="#FFFFFF"
-        android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.016" />
+        android:textSize="15sp" />
 
-    <EditText
-        android:id="@+id/editSenhaCadastroID"
-        android:layout_width="298dp"
-        android:layout_height="40dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="272dp"
-        android:backgroundTint="#00ffffff"
-        android:drawablePadding="5dp"
-        android:drawableStart="@drawable/ic_lock_outline"
-        android:ems="10"
-        android:fontFamily="@font/quicksand_medium"
-        android:hint="Sua senha"
-        android:inputType="textPersonName"
-        android:textAlignment="textStart"
-        android:textColorHint="#FFFFFF"
-        android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.109" />
 
     <EditText
         android:id="@+id/editEmailCadastroID"
         android:layout_width="298dp"
         android:layout_height="40dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="212dp"
+        android:layout_marginTop="15dp"
         android:backgroundTint="#00ffffff"
         android:drawablePadding="5dp"
         android:drawableStart="@drawable/ic_email"
@@ -107,64 +59,65 @@
         android:fontFamily="@font/quicksand_medium"
         android:hint="Seu e-mail"
         android:inputType="textPersonName"
-        android:textAlignment="textStart"
+        android:layout_gravity="center_horizontal"
         android:textColorHint="#FFFFFF"
-        android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.061" />
+        android:textSize="15sp" />
 
-    <android.support.v7.widget.CardView
-        android:id="@+id/cardView"
-        android:layout_width="330dp"
+
+    <EditText
+        android:id="@+id/editSenhaCadastroID"
+        android:layout_width="298dp"
         android:layout_height="40dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        app:cardBackgroundColor="@color/colorPrimaryDark"
-        app:cardCornerRadius="25dp"
-        app:cardElevation="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.984">
+        android:layout_marginTop="15dp"
+        android:backgroundTint="#00ffffff"
+        android:drawablePadding="5dp"
+        android:drawableStart="@drawable/ic_lock_outline"
+        android:layout_gravity="center_horizontal"
+        android:ems="10"
+        android:fontFamily="@font/quicksand_medium"
+        android:hint="Sua senha"
+        android:inputType="textPassword"
+        android:textColorHint="#FFFFFF"
+        android:textSize="15sp" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+    <EditText
+        android:id="@+id/editSenhConfirmar"
+        android:layout_width="298dp"
+        android:layout_height="40dp"
+        android:backgroundTint="#00ffffff"
+        android:layout_marginTop="15dp"
+        android:drawablePadding="5dp"
+        android:drawableStart="@drawable/ic_lock_black_24dp"
+        android:ems="10"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/quicksand_medium"
+        android:hint="Confirme sua senha"
+        android:inputType="textPassword"
+        android:textColorHint="#FFFFFF"
+        android:textSize="15sp" />
 
-            <Button
-                android:id="@+id/btnCancelarCadastroID"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="#00ffffff"
-                android:fontFamily="@font/quicksand_medium"
-                android:text="Cancelar"
-                android:textColor="#FFFFFF"
-                android:textSize="18sp" />
-        </LinearLayout>
-    </android.support.v7.widget.CardView>
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:background="@color/colorPrimaryDark"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/quicksand_medium"
+        android:layout_gravity="center_horizontal"
+        android:text="AS DUAS SENHAS DEVEM SER IGUAIS"
+        android:textColor="#ff0000"
+        android:layout_margin="10dp"
+        android:visibility="invisible"/>
 
     <android.support.v7.widget.CardView
         android:id="@+id/cardView2"
+        android:layout_gravity="center_horizontal"
         android:layout_width="330dp"
         android:layout_height="40dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="60dp"
         app:cardBackgroundColor="@color/colorPrimaryDark"
         app:cardCornerRadius="25dp"
-        app:cardElevation="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.763">
+        app:cardElevation="10dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -174,7 +127,7 @@
                 android:id="@+id/btnCadastrarID"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#00ffffff"
+                android:background="#00d80b0b"
                 android:fontFamily="@font/quicksand_medium"
                 android:text="Cadastrar"
                 android:textColor="#FFFFFF"
@@ -182,4 +135,5 @@
         </LinearLayout>
     </android.support.v7.widget.CardView>
 
-</android.support.constraint.ConstraintLayout>
+
+</LinearLayout>

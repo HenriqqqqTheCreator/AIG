@@ -2,12 +2,16 @@ package zapzap.tccetec.com.aig;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.os.Handler;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.volley.Request;
@@ -23,6 +27,8 @@ import com.google.firebase.auth.FirebaseAuth;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import zapzap.tccetec.com.aig.R;
 import zapzap.tccetec.com.aig.classesdeconexao.ConfiguracaoFirebase;
@@ -42,31 +48,49 @@ public class CadastrarActivity extends AppCompatActivity {
     private EditText inputFullName;
     private EditText inputEmail;
     private EditText inputPassword;
+    private EditText inputSenhaConfirn;
     private ProgressDialog pDialog;
     private SessionManager session;
     private SQLiteHandler db;
+
+    private String emailConfirm;
+    private String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
+
+    private TextView confirmarSenha;
 
     private FirebaseAuth autenticacao;
 
     //ip wifi dani 192.168.123.2
     //ip wifi casa 192.168.1.238
 
-    private static final String REGISTER_URL = "http://192.168.1.238/delaroy/volleyRegister.php";
+//    private static final String REGISTER_URL = "http://192.168.1.238/delaroy/volleyRegister.php";
+    //private static final String REGISTER_URL = "http://10.0.2.2/delaroy/volleyRegister.php";
+    private static final String REGISTER_URL = "http://aigdevelopment.000webhostapp.com/volleyRegister.php";
 
     public static final String KEY_USERNAME = "username";
     public static final String KEY_PASSWORD = "password";
     public static final String KEY_EMAIL = "email";
+
+    public static final String KEY_TESTE_EMAIL = "tb_email";
+    public static final String KEY_TESTE_NOME = "tb_nome";
+    public static final String KEY_TESTE_SENHA = "tb_senha";
+    public static final String KEY_TESTE_PONTOS = "tb_pontos";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cadastrar);
 
+        overridePendingTransition(R.anim.activity_filho_entrando, R.anim.activity_pai_saindo);
+
         inputFullName = findViewById(R.id.editNomeCadastroID);
         inputEmail = findViewById(R.id.editEmailCadastroID);
         inputPassword = findViewById(R.id.editSenhaCadastroID);
         btnRegister = findViewById(R.id.btnCadastrarID);
-        btnLinkToLogin = findViewById(R.id.btnCancelarCadastroID);
+        inputSenhaConfirn = findViewById(R.id.editSenhConfirmar);
+        confirmarSenha = findViewById(R.id.textView8);
+
 
         // Progress dialog
         pDialog = new ProgressDialog(this);
@@ -91,47 +115,59 @@ public class CadastrarActivity extends AppCompatActivity {
         btnRegister.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
 
-                /*if(inputEmail != null && inputFullName != null && inputPassword != null) {
+                if (inputEmail != null && inputFullName != null && inputPassword != null && inputSenhaConfirn != null){
 
-                    Usuario usuario = new Usuario();
-                    usuario.setEmail(inputEmail.getText().toString());
-                    usuario.setNome(inputFullName.getText().toString());
-                    usuario.setSenha(inputPassword.getText().toString());
+                    emailConfirm = inputEmail.getText().toString().trim();
 
-                    ConfiguracaoFirebase configuracaoFirebase = new ConfiguracaoFirebase();
+                if (isEmailValid(emailConfirm)) {
 
-                    autenticacao = configuracaoFirebase.getAutenticacao();
-                    autenticacao.createUserWithEmailAndPassword(
-                            usuario.getEmail(),
-                            usuario.getSenha()
-                    ).addOnCompleteListener(CadastrarActivity.this, new OnCompleteListener<AuthResult>() {
-                        @Override
-                        public void onComplete(@NonNull Task<AuthResult> task) {
-                            if( task.isSuccessful() ){
-                                Toast.makeText(CadastrarActivity.this, "Cadastrado com sucesso", Toast.LENGTH_SHORT).show();
-                            }else{
-                                Toast.makeText(CadastrarActivity.this, "Erro no cadastro:" + task.getException(), Toast.LENGTH_SHORT).show();
+                    String senhaUM = inputPassword.getText().toString();
+                    String senhaDois = inputSenhaConfirn.getText().toString();
+
+                    if (senhaUM.equals(senhaDois)) {
+
+                        registerUser();
+
+                    } else {
+
+
+                        confirmarSenha.setVisibility(View.VISIBLE);
+
+                        Handler handler = new Handler();
+
+                        handler.postDelayed(new Runnable() {
+                            @Override
+                            public void run() {
+
+                                confirmarSenha.setVisibility(View.INVISIBLE);
                             }
-                        }
-                    });
+                        }, 5000);
+                    }
+                } else {
+                    Toast.makeText(getApplicationContext(), "Digite um email valido", Toast.LENGTH_SHORT).show();
+                }
 
-                }else{
+            }else{
+                    Toast.makeText(CadastrarActivity.this, "Por favor, preencha todos os campos", Toast.LENGTH_SHORT).show();
+                }
 
-                    Toast.makeText(CadastrarActivity.this, "Preencha todos os campos", Toast.LENGTH_SHORT).show();
-
-                }*/
-
-                registerUser();
-            }
+        }
         });
 
-        // Link to Login Screen
-        btnLinkToLogin.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View view) {
-                finish();
-            }
-        });
+    }
 
+    public static boolean isEmailValid(String email) {
+        boolean isValid = false;
+
+        String expression = "^[\\w\\.-]+@([\\w\\-]+\\.)+[A-Z]{2,4}$";
+        CharSequence inputStr = email;
+
+        Pattern pattern = Pattern.compile(expression, Pattern.CASE_INSENSITIVE);
+        Matcher matcher = pattern.matcher(inputStr);
+        if (matcher.matches()) {
+            isValid = true;
+        }
+        return isValid;
     }
 
     private void registerUser(){
@@ -148,6 +184,10 @@ public class CadastrarActivity extends AppCompatActivity {
                     @Override
                     public void onResponse(String response) {
                         Toast.makeText(CadastrarActivity.this, response, Toast.LENGTH_SHORT).show();
+
+                        if(response.equals("Pronto! Agora tente logar!")){
+                            startActivity(new Intent(CadastrarActivity.this, LoginActivity.class));
+                        }
                     }
                 },
                 new Response.ErrorListener() {
@@ -159,9 +199,10 @@ public class CadastrarActivity extends AppCompatActivity {
             @Override
             protected Map<String,String> getParams(){
                 Map<String,String> params = new HashMap<String, String>();
-                params.put(KEY_USERNAME,username);
-                params.put(KEY_PASSWORD,password);
-                params.put(KEY_EMAIL, email);
+                params.put(KEY_TESTE_EMAIL, email);
+                params.put(KEY_TESTE_NOME, username);
+                params.put(KEY_TESTE_SENHA, password);
+                params.put(KEY_TESTE_PONTOS, "0");
                 return params;
             }
 
@@ -171,5 +212,10 @@ public class CadastrarActivity extends AppCompatActivity {
         requestQueue.add(stringRequest);
     }
 
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
 
+        finish();
+    }
 }

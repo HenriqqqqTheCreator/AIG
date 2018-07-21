@@ -5,56 +5,29 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context="zapzap.tccetec.com.aig.fragment.SegundoFragment"
-    android:orientation="vertical">
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="405dp">
-
-        <LinearLayout
-            android:background="@drawable/gradientbackground"
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:orientation="vertical">
-
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/profile_image"
-                android:layout_marginTop="10dp"
-                android:layout_width="130dp"
-                android:layout_height="130dp"
-                android:src="@color/branco"
-                app:civ_border_color="@color/colorAccent"
-                app:civ_border_width="3dp"
-                android:layout_gravity="center_horizontal"/>
-
-
-
-        </LinearLayout>
+    android:background="@color/colorAccent"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
 
         <android.support.v7.widget.CardView
             android:layout_width="300dp"
-            android:layout_height="60dp"
-            android:layout_marginLeft="10dp"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="155dp">
+            android:layout_gravity="center_horizontal"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:elevation="10dp">
 
             <LinearLayout
                 android:background="#FFFFFF"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="horizontal">
-                <LinearLayout
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
-                    android:layout_height="match_parent">
+                android:orientation="vertical">
 
                     <TextView
-                        android:layout_gravity="center_horizontal"
-                        android:layout_width="230dp"
-                        android:layout_height="wrap_content"
-                        android:text="No name found"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Suas maiores pontuações"
                         android:id="@+id/tvNomePerfil"
                         android:textColor="@color/colorPrimaryDark"
                         android:textAlignment="center"
@@ -63,40 +36,129 @@
 
                 </LinearLayout>
 
-            </LinearLayout>
-
         </android.support.v7.widget.CardView>
 
-    </RelativeLayout>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Lições finalizadas"
-        android:fontFamily="@font/quicksand_medium"
-        android:textColor="@color/colorPrimaryDark"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="-180dp"/>
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="300dp"
-        android:layout_marginTop="1dp">
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp">
 
         <LinearLayout
-            android:layout_width="360dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:orientation="vertical">
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:orientation="horizontal"
-                android:weightSum="4">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:background="#030147"
+                android:id="@+id/imageview_iniciante"
+                android:src="@drawable/inicianteicon" />
 
-            </LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:textAlignment="center"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Pontuação iniciante"
+                        android:fontFamily="@font/quicksand_medium"
+                        android:textColor="@color/secondFrag"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:id="@+id/text_view_pontos_iniciante"
+                        android:fontFamily="@font/quicksand_medium"
+                        android:text="0 Pontos"
+                        android:textAlignment="center"
+                        android:textColor="@color/secondFrag"
+                        android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_marginTop="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:background="#030147"
+                        android:id="@+id/imageview_intermediario"
+                        android:src="@drawable/intermediarioicon"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="5dp"
+                        android:textAlignment="center"
+                        android:text="Pontuação intermediário"
+                        android:fontFamily="@font/quicksand_medium"
+                        android:textColor="@color/secondFrag"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="@font/quicksand_medium"
+                        android:text="0 Pontos"
+                        android:id="@+id/text_view_pontos_intermediario"
+                        android:textAlignment="center"
+                        android:textColor="@color/secondFrag"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="30dp   "
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:id="@+id/imageview_avancado"
+                        android:background="#030147"
+                        android:src="@drawable/avancadoicon" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:textAlignment="center"
+                        android:fontFamily="@font/quicksand_medium"
+                        android:text="Pontuação avançado"
+                        android:textColor="@color/secondFrag"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="@font/quicksand_medium"
+                        android:text="0 Pontos"
+                        android:id="@+id/text_view_pontos_avancado"
+                        android:textAlignment="center"
+                        android:textColor="@color/secondFrag"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
         </LinearLayout>
 
     </ScrollView>

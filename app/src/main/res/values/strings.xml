@@ -8,85 +8,365 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
-    <string name="mercadodeacoes">O mercado de ações é um ambiente aonde se é negociado ativos, como ações e fundos imobiliários, boa parte das negociações deste mercado são feitas pela bolsa de valores, contudo, pode muito bem ocorrer em outros locais, um exemplo disso é o mercado de balcão, onde se negociam algun
-        s títulos que não são negociáveis na bolsa de valores.</string>
-    <string name="paraquemomercado">Se você for uma empresa: Quando a empresa tem um projeto em mãos ou precisa de dinheiro para algum investimento ou dívida porem não possui dinheiro ela pode colocar suas ações para a venda em troca de capital (dinheiro), possibilitando assim a realização de seus projetos, pagamentos de suas dívidas ou qualquer coisa que precise se fazer.
-Se você for um investidor: Ao comprar ações de uma empresa o investidor vira sócio da mesma tem direito a participar das divisões de seus lucros sem que seja necessário administrar ou tomar alguma decisão na empresa. Assim sendo seu capital pode ser multiplicado somente pela valorização das ações que comprou.
+    <string name="mercadodeacoes"><b>Mercado de ações \n</b>
+
+        <b>que é o mercado de ações?</b>\n
+        O mercado de ações é um ambiente aonde se é negociado ativos, como ações e fundos imobiliários, boa parte das negociações deste mercado são feitas pela bolsa de valores, contudo, pode muito bem ocorrer em outros locais, um exemplo disso é o mercado de balcão, onde se negociam alguns títulos que não são negociáveis na bolsa de valores.\n
+        <b>\n Para quem o mercado de ações é interessante?\n</b>
+        <i><u>\n Empresa:</u></i> Quando a empresa tem um projeto em mãos ou precisa de dinheiro para algum investimento ou dívida porem não possui dinheiro ela pode colocar suas ações para a venda em troca de capital (dinheiro), possibilitando assim a realização de seus projetos, pagamentos de suas dívidas ou qualquer coisa que precise se fazer;\n
+        <i><u>\n Investidor:</u></i> Ao comprar ações de uma empresa o investidor vira sócio da mesma tem direito a participar das divisões de seus lucros sem que seja necessário administrar ou tomar alguma decisão na empresa. Assim sendo seu capital pode ser multiplicado somente pela valorização das ações que comprou.\n
+    </string>
+
+    <string name="mercadodecapitais"><b>\n Mercado de capitais \n</b>
+        \n “O mercado de capitais é um mecanismo de distribuição de valores mobiliários, que tem o objetivo de gerar liquidez aos títulos emitidos pelas empresas e viabilizar o seu processo de capitalização”. Podemos dizer assim que o mercado de capitais tem como seu principal objetivo:” direcionar os recursos da sociedade para o comércio, a indústria e outras atividades econômicas”, fazendo com que a sociedade invista seus recursos no mercado, fazendo com que a economia do pais cresça e com isso remunerando melhor o investidor. \n
+        \n O mercado de capitais tem em sua estrutura três principais modelos de composição, os quais são bolsas de valores, sociedades corretoras e outras instituições financeiras autorizadas. Os quais negociam os principais ativo do mercado de capitais. \n
+        <b>\n Os principais ativos do mercado de capitais \n</b>
+
+        \n •	<b>Ações</b> – “Ação é a menor parcela do capital social das companhias ou sociedades anônimas”. \n
+        \n •	<b>Commercial</b> Papers – Commercial Papers ou promissória comercial é um documento no qual o devedor (empresa) tem o compromisso de quitar a divida da promissória, quando um investidor compra uma nota promissória comercial ele esta de um certa forma emprestando dinheiro para a empresa, a qual devera pagar os recursos emprestados pelo investidor no prazo, condições e garantias predeterminados na emissão da nota promissória. \n
+        \n •	<b>Debêndure</b> – O debêndure é uma promissória emitida por uma sociedade de ação, que assegura aos detentores o direito a um credito contra a companhia. O debêndore tem praticamente as mesmas características da Commercial Papers (promissórias comercial) porem seu tempo de devolução é maior. \n
+
+<b>\n Mercado de capitais primários e secundários \n</b>
+\n Uma explicação mais justificativa do mercado primaria, seria que nele ocorre a primeira emissão de um titulo e o primeiro negocio, o patrimônio recebido é direcionado para a empresa ou para o banco, é com isto que as empresas conseguem um financiamento para seus investimentos e também seria com isto que os bancos conseguem capital para investir em uma empresa. \n
+\n Já o mercado de capitais secundário é onde os títulos são negociados de um proprietário para o outro, ocorrendo assim uma liquides nos títulos, neste momento os patrimônios recebidos não são mais direcionados nem a empresa e nem ao banco, mas sim para o dono do título. \n
 </string>
 
-    <string name="mercadodecapitais">“O mercado de capitais é um mecanismo de distribuição de valores mobiliários, que tem o objetivo de gerar liquidez aos títulos emitidos pelas empresas e viabilizar o seu processo de capitalização”. Podemos dizer assim que o mercado de capitais tem como seu principal objetivo:” direcionar os recursos da sociedade para o comércio, a indústria e outras atividades econômicas”, fazendo com que a sociedade invista seus recursos no mercado, fazendo com que a economia do pais cresça e com isso remunerando melhor o investidor.
-O mercado de capitais tem em sua estrutura três principais modelos de composição, os quais são bolsas de valores, sociedades corretoras e outras instituições financeiras autorizadas. Os quais negociam os principais ativo do mercado de capitais.
-Os principais ativos do mercado de capitais
+    <string name="comoinvestir"><b> \n Como investir? \n </b>
 
-•	Ações – “Ação é a menor parcela do capital social das companhias ou sociedades anônimas”.
-•	Commercial Papers – Commercial Papers ou promissória comercial é um documento no qual o devedor (empresa) tem o compromisso de quitar a divida da promissória, quando um investidor compra uma nota promissória comercial ele esta de um certa forma emprestando dinheiro para a empresa, a qual devera pagar os recursos emprestados pelo investidor no prazo, condições e garantias predeterminados na emissão da nota promissória.
-•	Debêndure – O debêndure é uma promissória emitida por uma sociedade de ação, que assegura aos detentores o direito a um credito contra a companhia. O debêndore tem praticamente as mesmas características da Commercial Papers (promissórias comercial) porem seu tempo de devolução é maior.
-
-Mercado de capitais primários e secundários
-Uma explicação mais justificativa do mercado primaria, seria que nele ocorre a primeira emissão de um titulo e o primeiro negocio, o patrimônio recebido é direcionado para a empresa ou para o banco, é com isto que as empresas conseguem um financiamento para seus investimentos e também seria com isto que os bancos conseguem capital para investir em uma empresa.
-Já o mercado de capitais secundário é onde os títulos são negociados de um proprietário para o outro, ocorrendo assim uma liquides nos títulos, neste momento os patrimônios recebidos não são mais direcionados nem a empresa e nem ao banco, mas sim para o dono do título.
+\n Antes de começar a falar de como investir, devemos saber o que é investimentos: são nada mais é que qualquer desembolso que produza expectativa de ganho futuro. Nesta linha, podem ser consideradas diferentes formas de capital como intelectual, social e natural. Por exemplo, dedicar tempo ao estudo para desenvolver conhecimento sobre determinado assunto, assim como, plantar uma árvore para colher frutos no futuro – ambos podem ser entendidos como formas de investimentos.\n
+\n Em termos financeiros, investimento é aplicar o seu dinheiro de forma que ele gere rendimentos no futuro. É uma ótima maneira de colocar a seu dinheiro para trabalhar para você: quando você investe, o seu dinheiro passa a gerar ganhos permitindo que você se beneficie do efeito dos juros compostos  resultando em uma renda extra. E isso, sem que você precise trabalhar mais no seu emprego ou ganhar um aumento.\n
 </string>
 
-    <string name="comoinvestir">Antes de começar a falar de como investir, devemos saber o que é investimentos: são nada mais é que qualquer desembolso que produza expectativa de ganho futuro. Nesta linha, podem ser consideradas diferentes formas de capital como intelectual, social e natural. Por exemplo, dedicar tempo ao estudo para desenvolver conhecimento sobre determinado assunto, assim como, plantar uma árvore para colher frutos no futuro – ambos podem ser entendidos como formas de investimentos.
-Em termos financeiros, investimento é aplicar o seu dinheiro de forma que ele gere rendimentos no futuro. É uma ótima maneira de colocar a seu dinheiro para trabalhar para você: quando você investe, o seu dinheiro passa a gerar ganhos permitindo que você se beneficie do efeito dos juros compostos  resultando em uma renda extra. E isso, sem que você precise trabalhar mais no seu emprego ou ganhar um aumento.
+    <string name="porqueabolsadevalores"><b>\n Porque a bolsa de valores? \n</b>
+    \n Muitas pessoas se perguntam onde investir seu dinheiro, a bolsa de valores é a uma das melhores formas de investir o seu dinheiro, porém tem seus riscos podendo torná-lo um futuro investidor bem sucedido ou não. Pode ser considerada uma espécie de aposta pelo fato de depender muito das empresas e de seu rendimento, podendo se perder ou ganhar milhões em curto espaço de tempo. \n
+    \n Não são somente as empresas que são responsáveis pela queda ou alta de suas ações á também os fatores esternos como as noticias e a própria política, tanto do pais em que a empresa se localiza tanto a dos outros. \n
+    \n A economia também tem um elo muito grande com a bolsa de valores, no caso quando a um aumento no dinheiro e no crédito ocorrendo assim uma estimulação no PIB, acaba influenciando assim o mercado de ações. \n
+    <b> \n Como ocorre o processo de queda e o processo de alta? \n </b>
+    \n Uma das dúvidas mais comum é o que significa quando dizemos que a bolsa esteve em queda ou em alta, podemos dizer que a bolsa de valores segue a regra de oferta e demanda, ou seja, quanto mais indivíduos compram uma ação, mais caro se torna está ação, já se muitos indivíduos venderem suas ações, mais barata se torna está ação, quando um destes fatores ocorre há uma queda ou alta na bolsa de valores. \n
+    <b> \n Por que as notícias da mídia e políticas influenciam? \n </b>
+    \n Muitos tentam entende o porque as noticias políticas influência na bolsa de valores, porem o fator seria que a política demonstra como o pias esta, ou seja, a política é uma espécie de propaganda do País onde se localiza a empresa para os investidores em geral. Sendo assim se a política do País não estiver bem, provável haverá uma queda nas ações das empresas localizadas nele. \n
+        <b>\n Por que as notícias da mídia e políticas influenciam? \n </b>
+    \n Muitos tentam entender o porque as noticias tanto da mídia, tanto políticas influência na bolsa de valores, porem o fator seria que tanto que a mídia como a política demonstra como o pias esta, ou seja, a mídia e a política são uma espécie de propaganda do País, onde se localiza a empresa, para que os investidores em geral tenham um bom olhar sobre a empresa é sempre bom que o pais esteja bem falado e esteja com sua política estável. Sendo assim se a mídia só dizer que a empresa não esta bem ou a política do País não estiver adequada, provável haverá uma queda nas ações das empresa. \n
+    </string>
+
+    <string name="comolucrar"><b>\n Como ganhar dinheiro na Bolsa de Valores \n </b>
+
+\n Atualmente muitas pessoas não tem o conhecimento de que ao investirem seu capital, na bolsa de valores, podem através disso aumentar seu capital, através do conhecimento analítico de demonstração de ações. \n
+\n Infelizmente na bolsa de valores não existem formulas mágicas de ganhar dinheiro, porem atualmente existem certas estratégias que são eficientes que podem permitir a quem as utilize ganhar dinheiro ao longo do tempo, estas pessoas devem ter persistência e paciência. Pois uma ação que hoje esta sendo valorizada, no outro pode sofrer uma queda brusca, por conta disso um investidor deve sempre estar preparado para lidar com os piores cenários. \n
+
+<b>\n Principais estratégias para ser bem sucedido na bolsa de valores: \n </b>
+\n A forma mais eficaz de ganhar na bolsa de valores seria comprando uma ação e sua valorização, a qual muda, tanto decaindo quanto subindo. “Por exemplo, você compra as ações de uma empresa por R$ 30,00 e depois as vende por R$ 40,00. O lucro que você obtém são os R$ 10,00 de diferença, multiplicado pela quantidade de ações que você comprou.” \n
+\n Esta é a principal estratégia que é utilizada por investidores para que aja uma lucratividade no investimento, o qual foi colocado em uma ação. Os dividendos também seriam uma forma de ganhar dinheiro, através dos proventos, os quais fazem parte do lucro da empresa que é paga aos acionistas na forma de Dividendos e de Juros sob Capital Próprio (JCP). \n
+
+<b>\n Análise de ações \n</b>
+
+\n A análise de ações tem como objetivo identificar as melhores empresas para investir, tendo também qual o melhor momento para se vender ou comprar uma ação de determinada empresa. Com isso em mente muitos investidores conseguem se dar bem no mercado de ações. \n
+\n “As análises não são utilizadas com o intuito de prever o que vai acontecer, mas sim reagir aos sinais e as informações que nós temos para poder investir do lado do cenário de maior probabilidade e, mais importante do que isso, ter poder de reação para saber lidar com os cenários de adversidade.” \n
+
+•	<b>\n Análise técnica de ações:</b> A análise técnica é considerada a mais eficaz e poderosa, para se ter um bom resultado na bolsa de valores, é considerada a maneira ideal para apontar qual o cenário mais provável de ocorrer com o preço das ações nas próximas horas ou ate mesmo nos próximos meses. \n
+
+•	<b>\n Análise fundamental de ações:</b> A análise fundamental de ações é algo muito utilizado para identificar boas empresas com excelência perspectiva de valores em longo prazo. A analise fundamental é utilizada também para avaliar a saúde financeira da empresa, quais as suas perspectivas futuras de lucro, como funciona o seu negócio, quem são os seus concorrentes. E com isso descobrir quais são as empresas ou as ações que tem a probabilidade de crescer a longo prazo. \n
+
+<b> \n Diferença entre os dois tipos de análises \n</b>
+\n A diferença entre a análise de ações e a análise fundamental de ações, seria que em quando na análise de ações tem como objetivo analisar o rendimento de uma empresa ou ação em curto prazo, na análise fundamental de ações em curto prazo já tem como objetivo analisar o rendimento de uma empresa ou ação a longo prazo. É muito importante não confundir as duas, pois utilizadas adequadamente pode trazer bons resultados. \n
 </string>
 
-    <string name="porqueabolsadevalores">Antes de começar a falar de como investir, devemos saber o que é investimentos: são nada mais é que qualquer desembolso que produza expectativa de ganho futuro. Nesta linha, podem ser consideradas diferentes formas de capital como intelectual, social e natural. Por exemplo, dedicar tempo ao estudo para desenvolver conhecimento sobre determinado assunto, assim como, plantar uma árvore para colher frutos no futuro – ambos podem ser entendidos como formas de investimentos.
-Em termos financeiros, investimento é aplicar o seu dinheiro de forma que ele gere rendimentos no futuro. É uma ótima maneira de colocar a seu dinheiro para trabalhar para você: quando você investe, o seu dinheiro passa a gerar ganhos permitindo que você se beneficie do efeito dos juros compostos  resultando em uma renda extra. E isso, sem que você precise trabalhar mais no seu emprego ou ganhar um aumento.
-</string>
-    <string name="processodequeda">Uma das dúvidas mais comum é o que significa quando dizemos que a bolsa esteve
-        em queda ou em alta, podemos dizer que a bolsa de valores segue a regra de oferta e demanda, ou seja, quanto mais indivíduos compram uma ação, mais caro se torna está ação, já se muitos indivíduos venderem suas ações, mais barata se torna está ação, quando um destes fatores ocorre há uma queda ou alta na bolsa de valores.</string>
-    <string name="noticiasdamidia">Muitos tentam entender o porque as noticias políticas influênciam na bolsa de valores, porem o fator seria que a política demonstra como o pias esta, ou seja, a política é uma espécie de propaganda do País onde se localiza a empresa para os investidores em geral. Sendo assim se a política do P
-        aís não estiver bem, provável haverá uma queda nas ações das empresas localizadas nele.</string>
+    <string name="fatoresinternos"><b>\n Fatores internos \n</b>
 
-    <string name="comolucrar">Atualmente muitas pessoas não tem o conhecimento de que ao investirem seu capital, na bolsa de valores, podem através disso aumentar seu capital, através do conhecimento analítico de demonstração de ações.
-Infelizmente na bolsa de valores não existem formulas mágicas de ganhar dinheiro, porem atualmente existem certas estratégias que são eficientes que podem permitir a quem as utilize ganhar dinheiro ao longo do tempo, estas pessoas devem ter persistência e paciência. Pois uma ação que hoje esta sendo valorizada, no outro pode sofrer uma queda brusca, por conta disso um investidor deve sempre estar preparado para lidar com os piores cenários.
-</string>
-    <string name="principaisestrategy">A forma mais eficaz de ganhar na bolsa de valores seria comprando uma ação e sua valorização, a qual muda, tanto decaindo quanto subindo. “Por exemplo, você compra as ações de uma empresa por R$ 30,00 e depois as vende por R$ 40,00. O lucro que você obtém são os R$ 10,00 de diferença, multiplicado pela quantidade de ações que você comprou.”
-Esta é a principal estratégia que é utilizada por investidores para que aja uma lucratividade no investimento, o qual foi colocado em uma ação. Os dividendos também seriam uma forma de ganhar dinheiro, através dos proventos, os quais fazem parte do lucro da empresa que é paga aos acionistas na forma de Dividendos e de Juros sob Capital Próprio (JCP).
-</string>
-    <string name="analisedeacoes">A análise de ações tem como objetivo identificar as melhores empresas para investir, tendo também qual o melhor momento para se vender ou comprar uma ação de determinada empresa. Com isso em mente muitos investidores conseguem se dar bem no mercado de ações.
-“As análises não são utilizadas com o intuito de prever o que vai acontecer, mas sim reagir aos sinais e as informações que nós temos para poder investir do lado do cenário de maior probabilidade e, mais importante do que isso, ter poder de reação para saber lidar com os cenários de adversidade.”
-</string>
+\n Os fatores internos são os colaboradores, produção em geral, maquinários, capacidade produtiva etc. Os fatores internos de uma empresa são importantes para planejar diversos fatores como, por exemplo: \n
+        \n\ •	Controle de pedido; \n
+            •	Analisar terceirização; \n
+            •	Necessidade de contratação ou demissão; \n
+            •	Controle salarial e remuneração; \n
+            •	Visão; \n
+            •	Missão; \n
+            •	Valores; \n
+            •	Ética; \n
+            •	Delegar ações; \n
+<b> \n Qual a seria a importância de delegar ações? \n </b>
+\n É consenso na administração que um líder deve saber delegar. Há pessoas que são muito produtivas individualmente e por isso são promovidas. Mas, mesmo sendo competentes, elas nem sempre sabem como liderar suas equipes, principalmente por não saber repassar atividades que fazia tão bem antes da promoção. \n
+<b> \n A importância de o funcionário saber o objetivo da empresa. \n</b>
+\n A busca por resultados positivos e aumento de receita em meio a alta competitividade do mercado fez com que empresas começassem a atuar seguindo um conjunto de características próprias que facilitam sua diferenciação entre as demais organizações do setor. Essas características são conhecidas como: missão, visão e valores conforme falado anteriormente. \n
+<b>\n Fatores externos \n </b>
 
-    <string name="fatoresinternos">Os fatores internos são os colaboradores, produção em geral, maquinários, capacidade produtiva etc. Os fatores internos de uma empresa são importantes para planejar diversos fatores como, por exemplo:
-•	Controle de pedido;
-•	Analisar terceirização;
-•	Necessidade de contratação ou demissão;
-•	Controle salarial e remuneração;
-•	Visão;
-•	Missão;
-•	Valores;
-•	Ética;
-•	Delegar ações;
-</string>
-    <string name="delegaracoes">É consenso na administração que um líder deve saber delegar. Há pessoas que são muito produtivas individualmente e por isso são promovidas. Mas, mesmo sendo competentes, elas nem sempre sabem como liderar suas equipes, principalmente po
-        r não saber repassar atividades que fazia tão bem antes da promoção.</string>
-    <string name="objetivoempresa">A busca por resultados positivos e aumento de receita em meio a alta competitividade do mercado fez com que empresas começassem a atuar seguindo um conjunto de características próprias que facilitam sua diferenciação entre as demais organizações do setor. Essas características são co
-        nhecidas como: missão, visão e valores conforme falado anteriormente.</string>
-    <string name="fatoresexternos">O que são fatores externos?
-São todos os acontecimentos fora da empresa que influenciam direta ou indiretamente os lucros da empresa, como:
-A concorrência, os fornecedores, os clientes, em fim todo o envolvimento do negócio externo que proporciona o andamento do mercado. Para saber o fator externo da empresa deve-se entender bem alguns conceitos:
-•	Mercado: mercado é a relação entre a oferta e a procura. Também a composição de pessoas ou empresas que querem comprar bens ou serviços;
-•	Fornecedores: Com fornecedores deve-se estabelecer um tratamento dinâmico, gerando uma relação de ganho mútuo;
-•	Clientes: Os clientes são o coração do negócio, sem clientes a organização não pode sobreviver, é preciso que a empresa conheça muito bem as necessidades do consumidor, para oferecer produtos ou serviços que sejam aceitos pelo mercado;
-•	Concorrência: Os concorrentes são uma força importante que nos move a oferecer melhores produtos com o maior valor para os nossos clientes, trata-se de ganhar a preferência dos consumidores superando a oferta de outras empresas do mercado
+\n O que são fatores externos? \n
+\n São todos os acontecimentos fora da empresa que influenciam direta ou indiretamente os lucros da empresa, como: \n
+        \n A concorrência, os fornecedores, os clientes, em fim todo o envolvimento do negócio externo que proporciona o andamento do mercado. Para saber o fator externo da empresa deve-se entender bem alguns conceitos: \n
+•	Mercado: mercado é a relação entre a oferta e a procura. Também a composição de pessoas ou empresas que querem comprar bens ou serviços; \n
+•	Fornecedores: Com fornecedores deve-se estabelecer um tratamento dinâmico, gerando uma relação de ganho mútuo; \n
+•	Clientes: Os clientes são o coração do negócio, sem clientes a organização não pode sobreviver, é preciso que a empresa conheça muito bem as necessidades do consumidor, para oferecer produtos ou serviços que sejam aceitos pelo mercado; \n
+•	Concorrência: Os concorrentes são uma força importante que nos move a oferecer melhores produtos com o maior valor para os nossos clientes, trata-se de ganhar a preferência dos consumidores superando a oferta de outras empresas do mercado. \n
 </string>
 
-    <string name="tomardecisoes">Pode-se dividir os investidores em três categoria distintas: Arrojados, Moderados e Conservadores. Estas categorias estão relacionadas com fatores tais como: idade, estado civil, se o investidor tem filhos e etc.Segundo Cavalcante et al. (2005), o grau de aversão ao risco de cada investidor depende de suas características pessoais e do seu momento de vida. É importante que o investidor analise detalhadamente sua capacidade de resistir a eventuais variações de ganho e perda em investimentos antes de montar sua estratégia.
-Para tomar uma decisão, o investidor passa por algumas etapas até chegar à opção escolhida. Essas etapas ocorrem devido à existência de inúmeras variáveis a serem avaliadas na escolha do ativo ser escolhido
-</string>
-    <string name="reconhecerproblema">O processo decisório s
-        e inicia quando o investidor observa que há um problema a ser resolvido ou necessidade a ser satisfeita. No caso do investidor, a necessidade a ser satisfeita seria buscar a melhor opção de investimento, com o objetivo de obter maior lucro.</string>
-    <string name="bucadeinfo">Sheth, Mittal e Newman (2001), afirmam que uma vez que investidor reconhece a necessidade se inicia a busca por informações sobre várias formas de resolver o problema em questão. Essa busca raramente inclui todas as formas existentes investimento. O investidor somente leva em conta um grupo de ativos que
-        ele se lembra.</string>
-    <string name="escolha">O consumidor pré-seleciona algumas opções de maior interesse para serem comparados, fatores como marca, preço, cultura, recursos disponíveis e classe social, são comparados detalhadamente. No caso do investidor são avaliadas as taxas, risco, liquidez, rentabilidade envolvida
-        em cada opção de investimento.</string>
-    <string name="compra">Quando o investidor já tem definido o produto que vai comprar, sendo assim ele coloca em sua mente “é esse o produto que prefiro”. No caso do Investidor, nessa etapa o investimento já foi definido, somente faltando a intenção real de investir. Na próxima etapa o cliente cria uma intenção de compra e surge em sua mente um lembrete “Coisas a se fazer”, “na próxima vez que eu tiver a oportunidade vou compra-lo”.
-Já na fase final desse processo o cliente programa a compra e isso remetem a:
-“Arranjar os termos da transação, buscar e obter do vendedor a transferência de direito ou título, pagar pelo produto ou serviço, ganhar posse do produto ou compromisso de serviço de vendedor”.
-</string>
-    <string name="excessodeconfianca">Barber e Odean observam que homens são mais afetados por esse fenômeno que as mulheres quando se trata de investimentos. Em sua pesquisa esse fator supostamente levou os homens a negociarem 45% a mais do que as mulheres e por consequências dos custos e taxas e transação o retorno liquido de suas carteiras foi
-        aproximadamente 1% menor.</string>
+    <string name="tomardecisoes"><b> \n Qual o comportamento de um investidor e como ele toma suas decisões? \n </b>
 
+<b> \n Pode-se dividir os investidores em três categoria distintas: \n </b> Arrojados, Moderados e Conservadores. Estas categorias estão relacionadas com fatores tais como: idade, estado civil, se o investidor tem filhos e etc. Segundo Cavalcante et al. (2005), o grau de aversão ao risco de cada investidor depende de suas características pessoais e do seu momento de vida. É importante que o investidor analise detalhadamente sua capacidade de resistir a eventuais variações de ganho e perda em investimentos antes de montar sua estratégia. \n
+\n Para tomar uma decisão, o investidor passa por algumas etapas até chegar à opção escolhida. Essas etapas ocorrem devido à existência de inúmeras variáveis a serem avaliadas na escolha do ativo ser escolhido. \n
+<b> \n Reconhecimento do Problema \n </b>
+        \n O processo decisório se inicia quando o investidor observa que há um problema a ser resolvido ou necessidade a ser satisfeita. No caso do investidor, a necessidade a ser satisfeita seria buscar a melhor opção de investimento, com o objetivo de obter maior lucro. \n
+<b> \n Busca de Informação \n </b>
+\n Sheth, Mittal e Newman (2001), afirmam que uma vez que investidor reconhece a necessidade se inicia a busca por informações sobre várias formas de resolver o problema em questão. Essa busca raramente inclui todas as formas existentes investimento. O investidor somente leva em conta um grupo de ativos que ele se lembra. \n
+ <b> \n Escolha \n </b>
+\n O consumidor pré-seleciona algumas opções de maior interesse para serem comparados, fatores como marca, preço, cultura, recursos disponíveis e classe social, são comparados detalhadamente. No caso do investidor são avaliadas as taxas, risco, liquidez, rentabilidade envolvida em cada opção de investimento. \n
+<b>\n Compra \n </b>
+\n Quando o investidor já tem definido o produto que vai comprar, sendo assim ele coloca em sua mente “é esse o produto que prefiro”. No caso do Investidor, nessa etapa o investimento já foi definido, somente faltando a intenção real de investir. Na próxima etapa o cliente cria uma intenção de compra e surge em sua mente um lembrete “Coisas a se fazer”, “na próxima vez que eu tiver a oportunidade vou compra-lo”. \n
+\n Já na fase final desse processo o cliente programa a compra e isso remete a: \n
+        <u>\n “Arranjar os termos da transação, buscar e obter do vendedor a transferência de direito ou título, pagar pelo produto ou serviço, ganhar posse do produto ou compromisso de serviço de vendedor”.\n </u>
+<b> \n Excesso de Confiança \n </b>
+\n Barber e Odean observam que homens são mais afetados por esse fenômeno que as mulheres quando se trata de investimentos. Em sua pesquisa esse fator supostamente levou os homens a negociarem 45% a mais do que as mulheres e por consequências dos custos e taxas e transação o retorno liquido de suas carteiras foi aproximadamente 1% menor. \n
+</string>
+
+    <!-- Iniciante -->
+
+
+    <!-- Intermediario -->
+    <string name="concorrenciaNoMercado">\n Na formação de uma empresa tudo é levado em conta. Desde avaliar a concorrência até observar qual região cobra menos impostos. \n
+\n A avaliação da concorrência é uma parte muito importante para uma empresa, pois um concorrente nada mais é que um rival, saber a qualidade de seus produtos, seu preço de venda, a forma que seus clientes se sentem em relação a empresa, são coisas extremamente importantes, uma empresa que não analisa tais informações dificilmente tem uma chance de crescimento. Existe uma coisa conhecida como lei de oferta e procura, sendo a oferta a quantidade do produto no mercado e a procura o interesse sobre tal produto, o preço do produto ofertado está ligado a diversos fatores, muitos relacionados a sua fabricação, deslocamento do mesmo até o cliente e o lucro de uma empresa sobre o produto, contudo o preço está diretamente ligado a procura, se pouca gente compra o produto o produtor é estimulado a abaixar seu preço. \n
+\n Existe um processo na contabilidade e na administração conhecido como dumping, que é usado para derrubar seus concorrentes colocando seus produtos num preço menor que seu custo, mesmo sendo uma pratica sem ética e de certa forma ilícita algumas empresas usam de forma sutil o dumping para quebrar seus concorrentes, reconhecer quando se está ocorrendo essa situação é de grande interesse a um investidor do mercado de ações, pois com isso pode se decidir se é hora de comprar ações da empresa ou de sua concorrente que estará com preço baixo. \n
+\n O dumping é ilegal no Brasil e quem o pratica está sujeito as penas descritas na constituição. \n
+</string>
+    <string name="contabilidade"><b> \n Contabilidade \n </b>
+
+\n Desde que o ser humano descobriu a importância de organizar-se para atingir determinados objetivos, ele busca ações que se realizam de forma a otimizar recursos. Esta busca é incessante, já que as variáveis que influenciam nosso mundo surgem pela própria evolução da maneira de viver do ser humano. \n
+
+<b> \n História da Contabilidade \n </b>
+
+\n A Contabilidade é considerada tão antiga quanto a origem do homem e uma das primeiras profissões. Os primeiros registros marcam com a civilização rudimentar no período Paleolítico superior, há cerca de 20.000 anos, nas cavernas e em ossos de animais. Já no livro Gênesis na Bíblia, podemos perceber algumas passagens que ilustram este sentido, quando se refere ao crescimento da riqueza de Jacó, através do rebanho de ovelhas. No livro de Jó , o mais antigo da Bíblia, são relatadas as transações comerciais entre egípcios e babilônicos, destacando-se o pagamento de salários e impostos. \n
+</string>
+    <string name="conceitosgeraisdecont"><b> \n Conceitos Gerais de Contabilidade \n </b>
+
+\n Antes de definirmos o que seja Contabilidade, vamos voltar um pouco ao passado e observar como surgiram alguns elementos importantes para a sua definição. Segundo alguns estudiosos, a primeira manifestação de inteligência do ser humano foi relacionada com a riqueza, entendida como acúmulo de bens utilizados em suas várias atividades. O homem percebendo que os meios que acumulava não mais precisavam ser buscados, até que se acabassem, teve formada a idéia de Patrimônio. Vocês podem perceber que a idéia de Patrimônio está relacionada com bens ou materiais que o homem precisava para executar tarefas ou sobreviver. \n
+        <b>\n Podemos destacar até agora dois elementos importantes: \n </b>
+\n Patrimônio tem um valor fundamental na contabilidade. Aliás a palavra valor tem uma conotação também fundamental na idéia de patrimônio. \n
+\n Podemos conceituar que o Patrimônio é o conjunto de bens que constituem propriedade de alguém ou de um conjunto de pessoas. Certo? Ótimo! Agora, em qual cenário a contabilidade se desenvolveu? O primeiro passo ao desenvolvimento da contabilidade veio da forma de suprir a necessidade de alguém que precisava controlar seu conjunto de bens ou materiais, ou seja, o Patrimônio. Talvez tenha até surgido do seguinte questionamento: Como posso controlar meu patrimônio de forma que ele seja capaz de suprir minhas necessidades garantindo minha sobrevivência? Vocês podem notar que a contabilidade já nasceu como um sistema de informações, que tinha um só usuário: o proprietário do patrimônio o qual ele acompanhava e mensurava. A percepção que a riqueza era produzida pela ação e pelos efeitos do seu patrimônio, o proprietário deste patrimônio, desejando saber como se movimentava, começou a registrá-lo. Os primeiros registros foram feitos em cavernas e pedras. Querem ver um dado interessante? Sabem como os criadores de animais egípcios controlavam seus rebanhos? Juntando pedras em uma sacola. \n
+\n A Contabilidade é um dos conhecimentos mais antigos e não surgiu em função de qualquer tipo de legislação fiscal ou societária, nem embasada em princípios filosóficos, ou em regras estipuladas por terceiros, mas pela necessidade prática do próprio gestor do patrimônio, normalmente seu proprietário, preocupado em elaborar um instrumento que lhe permitisse, entre outros benefícios, conhecer, controlar, medir resultados, obter informações sobre produtos mais rentáveis, fixar preços e analisar a evolução de seu patrimônio. Esse gestor passou a criar rudimentos de escrituração que antecedesses a tais necessidades. \n
+\n Muitas tentativas foram sendo elaboradas, ao longo dos séculos, até que o método das partidas dobradas(que consiste no princípio de que para todo débito em uma conta, existe simultaneamente um crédito, da mesma forma que a soma do débito será igual a soma do crédito, assim como, a soma dos saldos devedores será igual a soma dos saldos credores) mostrou-se o mais adequado, produzindo informações úteis e capazes de atender a todas as necessidades dos usuários para gerir o patrimônio. Com a formação de grandes empresas, a Contabilidade passou a interessar a grupos cada vez maiores de indivíduos: acionistas, financiadores, banqueiros, fornecedores, órgãos públicos, empregados, além da sociedade em geral, pois a vitalidade das empresas tornou-se assunto de relevante interesse social. Assim, pode-se dizer que a Contabilidade surgiu ou foi criada em função da sua característica utilitária, de sua capacidade de responder a dúvidas e de atender as necessidades de seus usuários. Conjunto este de características que só não foi eficiente para o surgimento da Contabilidade como também para sua própria evolução. \n
+\n A Contabilidade formatou-se em concordância com o ambiente no qual opera. Como as nações têm histórias, valores e sistemas políticos diferentes, elas também têm padrões diferentes de desenvolvimento financeiro-contábil. \n
+\n A Contabilidade no Brasil não é como a de outros países. De fato, o que se observa é a diversidade, pois os sistemas e métodos diferem muito em cada país devido, principalmente sua cultura e ao seu desenvolvimento econômico (o desenvolvimento de cada ciência está intimamente ligado ao desenvolvimento econômico de uma nação). \n
+\n Esta diversidade é uma pequena parte da variedade de ambientes empresariais ao redor do mundo e a Contabilidade tem se mostrado sensitiva ao ambiente no qual opera. É interessante notar, também, que quando o ambiente empresarial dos países é similar, seus sistemas financeiro-contábil também tendem a ser similares. Em alguns países, tais como os Estados Unidos, a informação financeira é dirigida principalmente às necessidades dos investidores e credores, e a "utilidade da decisão" é o critério para julgar sua qualidade. Entretanto, em outros países, a Contabilidade tem um enfoque diferente e desempenha papéis diferentes. Por exemplo, em alguns países, esta é designada primeiramente para assegurar que o montante apropriado do imposto de renda seja arrecadado pelo governo. Este é o caso de muitos países sul americanos. No Brasil este enfoque ainda permanece, a Lei nº 6.404/76 contempla o tratamento tributário, porém está mais voltada à proteção dos credores da entidade. \n
+\n Em outros países (Europa continental e Japão), a Contabilidade é designada para auxiliar no cumprimento das políticas macroeconômicas, tais como o alcance de uma taxa pré-determinada de crescimento na economia nacional. Dentre os vários modelos existentes, cada um com suas particularidades, atendendo a interesses específicos, percebe-se que a Contabilidade tem uma dinâmica e uma maleabilidade muito grande e se adapta perfeitamente em qualquer contexto em que esteja inserida. \n
+</string>
+    <string name="evolucaodacont"><b> \n Evolução da Contabilidade \n </b>
+
+\n <b>Pré-história: 8.000 a.C. até 1.202 d.C.</b>\n (empirismo, conhecimento superficial): experiências e práticas vividas pelas civilizações do mundo antigo, destacando-se os estudos sumérios, babilônios, egípcios, chineses e romanos. \n
+
+\n <b>Idade Média: 1.202 d.C</b> \n Com a obra "Leibe Abaci", de Leonardo Fibonacci: período de sistematização dos registros. \n
+\n <b>Idade Moderna: 1494</b> \n Com a publicação da obra ""Summa de Arithmetica, Geometria, Proportioni e Proporcionalita", no capítulo "Tratatus Particularis de Computis et Scripturis" (Tratado Particular de Conta e Escrituração), do frei e matemático Luca Paccioli, em Veneza, onde este fez o estudo sobre o método das "Partidas Dobradas", tornando-se um marco na evolução contábil. \n
+\n <b>Idade Contemporânea</b> \n Do século XVIII, é o período científico da Contabilidade, quando esta deixa de ser mera "arte" para tornar-se "ciência". A partir daí surgiram várias doutrinas contábeis, como: Contista, Controlista, Personalista, Aziendalista e Patrimonialista. \n
+\n Obs. 1 – Na Contabilidade, como em todos os outros ramos, o saber humano distingue-se em dois aspectos: pelo raciocínio através da investigação dos fatos e pela prática através da aplicabilidade. \n
+\n O primeiro aspecto corresponde à ciência como um sistema de conhecimentos e o segundo à arte como um sistema de ações. A ciência depende da arte para ser útil à vida e a arte torna-se esclarecida e consciente de seus fins e potencialidade com o auxílio da ciência. \n
+\n Obs. 2 - As doutrinas contábeis foram introduzidas por diversas escolas de época que conceituaram a Contabilidade sob diversos aspectos. \n
+\n Contista: define a Contabilidade como a ciência das contas. \n
+\n Controlista: limita a Contabilidade em função do controle das entidades. Personalista: enfatiza a relação jurídica entre as pessoas como objetivo da Contabilidade. \n
+\n Aziendalista: define a Contabilidade como a ciência da administração da entidade. \n
+\n Patrimonialista: define a Contabilidade como a ciência que estuda o patrimônio.\n
+\n Neopatrimonialista: consiste em uma nova corrente científica que se aplicou na direção de classificar e reconhecer especialmente as relações lógicas que determinam a essência do fenômeno patrimonial, as das dimensões ocorridas e, com ênfase "no porque ocorrem os fatos", ou seja, qual a verdadeira influência dos fatores que produzem a transformação da riqueza (e que são os dos ambientes interno e externo que envolvem os meios patrimoniais). \n
+\n O desenvolvimento social do ser humano proporcionou a evolução dos registros de sua riqueza. O método das partidas dobradas, mundialmente aceito, se consolidou na idade média. A primeira publicação que ensinava este método, foi escrita pelo Frei Luca Paccioli, em 1494. \n
+\n A Contabilidade, à partir daí, foi se desenvolvendo junto com a própria importância da riqueza para o mundo, até se tornar ciência. As principais razões de a contabilidade ser ciência: \n
+\n Objeto: Patrimônio. \n
+\n Finalidade: a busca da eficácia e eficiência patrimonial. \n
+\n Metodologia: contabilidade possui métodos definidos, indutivos e fenomenológicos. \n
+
+\n Contabilidade: observa, registra, analisa.
+\n Patrimônio: sofre alterações provocadas pelos fatos contábeis das pessoas físicas ou jurídicas. \n
+</string>
+    <string name="finalidadedecont"><b> \n Finalidades da Contabilidade \n </b>
+
+ \n Desde os seus primórdios que a finalidade básica da Contabilidade tem sido o acompanhamento das atividades realizadas pelas pessoas, no sentido indispensável de controlar o comportamento de seus patrimônios, na função precípua de produção e comparação dos resultados obtidos entre períodos estabelecidos. \n
+\n A contabilidade faz o registro metódico e ordenado dos negócios realizados e a verificação sistemática dos resultados obtidos. Ela deve identificar, classificar e anotar as operações da entidade e de todos os fatos que de alguma forma afetam sua situação econômica, financeira e patrimonial. Com esta acumulação de dados, convenientemente classificados, a Contabilidade procura apresentar de forma ordenada, o histórico das atividades da empresa, a interpretação dos resultados, e através de relatórios produzir as informações que se fizerem precisas para o atendimento das diferentes necessidades. \n
+\n As finalidades fundamentais da Contabilidade referem-se à orientação da administração das empresas no exercício de suas funções. Portanto a Contabilidade é o controle e o planejamento de toda e qualquer entidade sócio-econômica. \n
+\n Controle: a administração através das informações contábeis, via relatórios pode certificar-se na medida do possível, de que a organização está agindo em conformidade com os planos e políticas determinados.\n
+\n Planejamento: a informação contábil, principalmente no que se refere ao estabelecimento de padrões e ao inter-relacionamento da Contabilidade e os planos orçamentários, é de grande utilidade no planejamento empresarial, ou seja, no processo de decisão sobre que curso de ação deverá ser tomado para o futuro. \n
+\n É exatamente o estudo e controle do Patrimônio, informando aos seus usuários, os fatos e seus reflexos na situação patrimonial. Contabilidade (ciência)  \n
+\n Objetivo (meio) : Controlar o patrimônio \n
+\n Objeto ( matéria) : Patrimônio \n
+\n Finalidade ( fim) Fornecer informações \n
+        <b> \n Objeto da Contabilidade \n </b>
+
+ \n A Contabilidade deve ser vista como um sistema de informações, cujo modo de trabalho consiste em: coletar, processar e transmitir elementos (dados) sobre a situação patrimonial de uma entidade, em determinado momento e a sua evolução em certo período. \n
+\n Ou seja, à partir desse enfoque, seus objetivos se sintetizam na produção de informações “úteis” (relevantes) a diversos interessados, sobre o Patrimônio, no que concerne a suas alterações. O objeto da Contabilidade é o patrimônio das entidades. Patrimônio administrável e em constante alteração. \n
+
+</string>
+    <string name="campodeappdecont"><b> \n Campo de aplicação da Contabilidade \n </b>
+
+\n A Contabilidade, enquanto ciência que estuda o patrimônio das entidades, encontra aplicações em todas estas, independente do tipo, ramo de atividade, segmento econômico ou localização geográfica. Assim, a identificação do campo de aplicação da Contabilidade também pode ser analisada através da definição do patrimônio, como o conjunto de bens, direitos e obrigações relacionados a uma pessoa física ou jurídica, de direito público ou privado, com ou sem fins lucrativos. \n
+\n A idéia de que a Contabilidade do setor público é diferente do setor privado ou, ainda que a Contabilidade de uma entidade filantrópica é diferente da entidade privada, não é correta, pois cada entidade, dentro do seu ramo de atividade e das suas peculiaridades apresenta especificidades próprias, só encontradas naquele segmento, ou seja, em uma entidade filantrópica a Contabilidade será exercida observando toda a legislação que envolve este tipo de entidade. Se compararmos a Contabilidade pública com a Contabilidade privada, observaremos que enquanto a pública não tem objetivo de apurar resultados (lucros), a privada tem. O conjunto de bens da área pública recebe um tratamento contábil específico, enquanto na área privada esses mesmos bens recebem outro tratamento. Note-se que enquanto no setor público os bens não são depreciados e corrigidos monetariamente, no setor privado estes bens têm objetivos de gerar resultados, ou seja, são realizados através da depreciação e são corrigidos monetariamente para manter o seu valor atualizado. \n
+\n Muitos outros exemplos poderiam ser expostos para demonstrar que a Contabilidade é igual em qualquer entidade, tendo como diferença entre elas as especificidades de cada entidade. Assim, concluímos que independentemente do tipo de atividade, do setor, da entidade, etc., a Contabilidade tem a mesma finalidade, o mesmo objetivo e utiliza-se das mesmas técnicas e métodos para registrar e controlar os patrimônios das entidades. \n
+</string>
+    <string name="principiosdecont"><b> \n Princípios Contábeis \n </b>
+\n Os princípios originaram-se da necessidade do estabelecimento de um conjunto de conceitos, princípios e procedimentos que não somente fossem utilizados como elementos disciplinadores do comportamento do profissional no exercício da Contabilidade, seja para a escrituração dos fatos e transações, seja na elaboração de demonstrativos, mas que permitissem aos demais usuários fixar padrões de comparabilidade e credibilidade, em função do conhecimento dos critérios adotados na elaboração dessas demonstrações.\n
+\n Além de delimitar e qualificar o campo de atuação da Contabilidade, os princípios servem de suporte aos postulados. E através da evolução da técnica contábil em função de novos fatos sócioeconômicos, modificações na legislação, novos pontos de vista, ou outros fatores, um princípio que hoje é aceito, poderá ser modificado, para atender às inovações ocorridas na vida empresarial.\n
+\n Os princípios básicos, essenciais ao exercício da Contabilidade são: o princípio do custo como base de valor, o princípio da realização da receita e confrontação da despesa, o princípio do denominador comum monetário e o princípio da competência.\n
+\n Princípio do Custo como Base de Valor: sua aplicação é importante para a Contabilidade na medida em que ele descarta a possibilidade do uso de valores subjetivos para o registro dos bens, estabelecendo que seja utilizado o valor que a entidade sacrificou no momento de sua aquisição.\n
+</string>
+    <string name="educacaofinanceira"><b>\n Por que a educação financeira é necessária? \n </b>
+
+\n De acordo com Jacob et al (2000, p.8), “o termo financeira “aplica-se a uma vasta escala de atividades relacionadas ao dinheiro nas nossas vidas diárias, desde o controle do cheque até o gerenciamento de um cartão de crédito, desde a preparação de um orçamento mensal até a tomada de um empréstimo, compra de um seguro, ou um investimento.” Enquanto que, educação “implica o conhecimento de termos, práticas, direitos, normas sociais, e atitudes necessárias ao entendimento e funcionamento destas tarefas financeiras vitais. Isto também inclui o fato de ser capaz de ler e aplicar habilidades matemáticas básicas para fazer escolhas financeiras sábias.”” Ou seja, a educação financeira nada mais é do que a capacidade de se tomar atitudes necessárias e executar planejamentos relacionados a atividades que envolvam dinheiro no nosso cotidiano, tendo assim o melhor controle de nosso capital pessoal e a possibilidade de guardar certa reserva do mesmo.\n
+\n Como dito por CR LUCCI et al (2007, p.4), “A importância da educação financeira pode ser vista sob diversas perspectivas: sob a perspectiva de bem estar pessoal, jovens e adultos podem tomar decisões que comprometerão seu futuro; as consequências vão desde desorganização das contas domésticas até a inclusão do nome em sistemas como SPC/ SERASA (Serviço de Proteção ao Crédito)” vimos com isto como se torna importante nossa educação financeira e quais são alguma das consequências de um mal uso do nosso capital pessoal. E segundo Braunstein e Welch (2002), em um artigo do boletim do Federal Reserve, “a administração ineficiente do dinheiro deixa os consumidores vulneráveis a crises financeiras mais graves.” Visando estas informações fica claro a todos nós o quão importante e necessário é um bom controle e uma excelente educação sobre nossas finanças.\n
+\n O mercado comercial nos oferece uma gama muito grande de produtos a serem comprados e muitos deste são de grande interesse a todos, porém de acordo com Braunstein e Welch (2002), “para se beneficiar dessas inovações os consumidores precisam de um nível básico de conhecimento sobre finanças não somente para identificar e acessar as informações que lhe são pertinentes, como também para saber avaliar a fonte dessas informações.”\n
+\n Em outros países como, por exemplo, nos estados unidos a preocupação com a educação financeira é muito crescente, devido à o grande número de dívidas não pagas e a falência tanto de pessoas físicas como jurídicas. “instituições públicas e privadas vêm estudando essa situação e maneiras de implementar programas educativos para a população, iniciando nas escolas primárias. Conforme apresentado no trabalho do Federal Reserve (Braunstein e Welch, 2002)”\n
+\n Em uma pesquisa realizada na Universidade Texas AeM University-Commerce (AVARD et al., 2005) com alunos do primeiro ano da graduação, aplicou-se um questionário com 20 questões sobre finanças. Verificou-se que dos 407 respondentes, 92% dos alunos tiveram um aproveitamento abaixo de 60%; o melhor aluno acertou 80% das questões e a média de acerto foi de 34,8%. Mostrando mais uma vez a necessidade de se educar a população referente a suas fianças e gastos.\n
+</string>
+
+
+    <!-- Avançado -->
+
+    <string name="tesourodireto"><b> \n Tesouro direto \n </b>
+
+\n (...) O Tesouro Nacional e a BMF BOVESPA criaram em 2002 o programa do Tesouro Direto, com o objetivo de tornar o acesso aos títulos públicos federais mais fácil e simples, permitindo a aplicação direta por qualquer pessoa física com valor inicial a partir de R$ 30,00. \n
+
+<b> \n Passo a passo \n </b>
+
+ \n O investidor deve inicialmente possuir CPF e conta corrente em instituto financeiro. A partir da aí o investidor deve seguir os seguintes passos: \n
+
+ \n O investidor acessa o site do Tesouro Direto; \n
+
+ \n Escolhe um Agente de Custódia (Bancos, Corretoras, dentre outros); \n
+
+ \n Solicita o cadastramento e envia a documentação necessária; \n
+
+ \n O Agente de Custódia habilita o investidor; \n
+
+ \n O investidor recebe sua senha via e-mail; \n
+
+ \n No 1º acesso ao sistema, será solicitada a digitação da senha definitiva; \n
+
+ \n O investidor já pode realizar as operações no Tesouro Direto. \n
+
+ \n Tesouro Direto é a única opção de investimento que é 100% garantido pelo Tesouro Nacional, não importando o valor da aplicação. Sendo assim considerado o título de menor risco disponível no mercado brasileiro. \n
+
+ \n Este tipo de investimento permite que haja aplicações de pequenos e grandes valores, tendo diversas formas de modalidade de pagamento e datas de vencimento. \n  </string>
+
+    <string name="fundosimobiliarios"><b> \n Fundos imobiliários \n </b>
+
+\n (...) os fundos imobiliários são ideais para quem deseja entrar no mercado imobiliário e não deseja desembolsar o valor total para adquirir um imóvel, ou mesmo investir seus recursos em apenas um ativo. \n
+
+<b> \n Vantagens de investir em Fundos Imobiliários \n </b>
+
+    <b> \n Valor inicial acessível \n </b>
+
+
+\n Não é preciso muito para entrar em um fundo imobiliário, há lançamentos com investimento mínimo de R$1 mil. Mesmo depois de o fundo ser lançado, você pode adquirir cotas no mercado secundário. \n
+
+       <b> \n Diversificação \n </b>
+
+\n Todos os negócios ligados ao mercado imobiliário rural ou urbano podem constar da carteira do fundo, tais como: construção para venda, aluguel, títulos emitidos para financiar obras, ações de empresas do ramo, cotas de outros fundos imobiliários entre outros. Além disso, qualquer tipo de imóvel pode ser negociado: shopping centers, escritórios, hospitais, apartamentos, galpões industriais, centros logísticos etc. Normalmente, os fundos imobiliários têm foco em uma atividade, como, por exemplo, aluguel de lojas comerciais. \n
+
+        <b> \n Praticidade \n </b>
+
+\n As tarefas ligadas à administração de um imóvel ficam a cargo dos profissionais responsáveis pelo fundo: busca dos imóveis, trâmites de compra e venda, procura de inquilinos, manutenção, impostos etc. \n
+
+        <b> \n Transparência \n </b>
+
+\n Você pode verificar o valor dos seus investimentos e se existem interessados em comprar ou vender as cotas a qualquer hora. Além disso, a Comissão de Valores Mobiliários (CVM) supervisiona o funcionamento do fundo e você pode participar de assembleias para acompanhar a gestão da carteira.
+
+     <b> \n Ganho Tributario \n </b>
+
+        \n Os rendimentos de pessoas físicas nos fundos imobiliários são isentos de imposto de renda, tais como: recebimentos de alugueis, rateio da venda de um imóvel do fundo etc. \n
+ </string>
+
+    <string name="debentures"><b> \n Debêntures \n </b>
+
+        \n (...) debênture é um título de dívida que gera um direito de crédito ao investidor. Ou seja, o mesmo terá direito a receber uma remuneração do emissor (geralmente juros) e periodicamente ou quando do vencimento do título receberá de volta o valor investido (principal). No Brasil, as debêntures constituem uma das formas mais antigas de captação de recursos por meio de títulos. \n
+
+        <b> \n Vantagens \n </b>
+
+\n    “Por se tratar de um investimento em renda fixa, o investidor tem a previsão do fluxo de caixa dos pagamentos de remuneração e amortizações do título”. \n
+
+\n    Rentabilidade atrativa quando comparada a outros produtos de renda fixa. \n
+
+\n    Para a companhia emissora, as debêntures são uma forma de captação de recursos alternativa aos financiamentos bancários. \n
+
+\n    É um título bastante flexível que viabiliza à empresa emissora estruturar operações de médio ou longo prazos de acordo com as suas necessidades de recursos, além de permitir o estabelecimento de diferentes características em termos de garantia, conversibilidade em ações, remuneração, repactuação ou mesmo de alteração de suas características pela denominada Assembleia Geral de Debenturistas (AGD). Repactuação é uma possibilidade de renegociar as condições acertadas com os debenturistas, de forma a adequar as características dos títulos às condições de mercado. \n
+
+\n    Em geral, a debênture apresenta custos de captação menores para os emissores, especialmente em relação a empréstimos bancários de curto prazo. \n
+
+\n    As empresas emissoras têm a vantagem dos pagamentos de juros serem deduzidos como despesas financeiras, ao contrário dos dividendos, que não são dedutíveis na apuração do resultado anual da empresa. \n
+
+\n    “A emissão de debêntures por uma companhia pode ser considerada um estágio preliminar a uma plena abertura de capital realizada por meio da emissão de ações, especialmente no caso de debêntures conversíveis.” \n
+    </string>
+
+    <string name="letrascreditoimobiliario"><b> \n Letras de Crédito Imobiliário (LCI) \n </b>
+
+\n (...) Letra de Crédito Imobiliário (LCI) é um título de crédito, lastreado por créditos imobiliários garantidos por hipoteca ou por alienação fiduciária, conferindo aos seus investidores direito de crédito pelo valor nominal, juros e, se for o caso, atualização monetária nele estipulado. Pode ser atualizada mensalmente por índice de preços, desde que emitida com prazo mínimo de 36 meses. \n
+
+\n (...) O LCI é emitida pelo credor dos créditos imobiliários e deve representar a totalidade desses créditos, os quais deveão ser registrados em sistemas atualizados. \n
+
+        <b> \n Vantagens (LCI) \n </b>
+
+    \n Importante instrumento que ajuda viabilizar recursos para o setor imobiliário. \n
+
+    \n Isenção de Imposto de Renda para investidor pessoa física. \n
+
+    \n Proteção do Fundo Garantidor de Créditos (FGC), que cobre perdas até o limite previsto em regulamentação por cliente (CPF ou CNPJ) em cada instituição financeira. \n
+
+    </string>
+
+    <string name="letrascreditoagronegocio"> <b> \n Letra de Crédito do Agronegócio (LCA) \n </b>
+
+    \n (...) Letra de Crédito do Agronegócio (LCA) é um título de crédito nominativo, de livre negociação, que representa promessa de pagamento em dinheiro lastreado em recebíveis originados de negócios entre produtores rurais – ou suas cooperativas – e terceiros, inclusive financiamentos ou empréstimos relacionados a produção, comercialização, beneficiamento ou industrialização de produtos ou insumos agropecuários ou de máquinas e implementos utilizados na produção agropecuária. \n
+
+    <b> \n Vantagens (LCA) \n </b>
+
+    \n Importante instrumento que ajuda viabilizar recursos para o financiamento do agronegócio no País. \n
+
+    \n Isenção de Imposto de Renda sobre os juros para investidor pessoa física. \n
+
+    \n Proteção do Fundo Garantidor de Créditos (FGC), que cobre perdas até o limite previsto em regulamentação por cliente (CPF ou CNPJ) em cada instituição financeira. \n
+
+    \n São variados os tipos de investimentos financeiros: você deve escolher um que esteja alinhado ao seu perfil como investidor. Normalmente, os riscos são proporcionais aos ganhos, mas ao diversificar as carteiras de investimento, você pode reduzir os riscos e aumentar o potencial de retorno. \n
+
+    </string>
+
+    <string name="comoinvestiremacoes"><b> \n Como investir em ações \n </b>
+
+\n Saber como investir em ações pode parecer complicado à princípio, mas não é. Para investir na Bolsa de Valores você precisa: \n
+
+  <b> \n 1 - Escolher uma boa corretora de valores \n </b>
+
+        \n <b> A </b> - O que seria uma corretora? \n
+
+        \n Corretoras de ações são empresas que auxiliam o Sistema Financeiro Nacional. O que ela faz é intermediar a compra e venda de ações e demais títulos financeiros. Para a criação e funcionamento de uma corretora de ações é preciso a autorização do BACEN e da CVM - Comissão de Valores Mobiliários, órgão que também fiscaliza suas atividades. \n
+
+        \n <b> B </b> - Como escolher uma boa corretora? \n
+
+        \n O mais difícil na hora de escolher uma corretora é equilibrar as suas necessidades como investidor – obter os custos mais baixos possíveis – com as suas necessidades como cliente –  ter um bom atendimento e recursos adequados. Como a primeira corretora que você encontrar provavelmente não é a mais adequada para o seu perfil você terá mais chances de obter sucesso como investidor ao dedicar o tempo necessário para visitar o site da corretora e entender como funcionam seus preços, serviços e produtos. Não tenha pressa na hora de escolher sua corretora. \n
+
+        \n <b> C </b> - Abrir uma conta de investimento \n
+
+        \n É preciso ter conta em uma dessas instituições (corretoras) porque é essencial para ter acesso à Bovespa e realizar seus investimentos. \n
+
+        \n 1 - Transferir o dinheiro
+
+        \n 2 - Definir seus objetivos
+
+        \n 3 - Traçar seu plano de investimento
+
+        \n 4 - Escolher as ações
+
+        \n 5 - Acessar o Home Broker
+
+    \n Home Broker é um sistema online de negociação no mercado de capitais. É ele quem conecta o usuário ao pregão eletrônico, permitindo operações no mercado BMeFBOVESPA. \n
+
+    \n 6 - Enviar sua ordem de compra
+
+    \n 7 - Acompanhar a valorização
+
+    \n 8 - Realizar lucros
+
+
+
+
+
+\n Reedificando novamente, para investir em ações na Bolsa de Valores você precisa abrir conta em uma corretora e transferir o dinheiro. Então, basta comprar as ações escolhidas através do Home Broker Quando as ações se valorizarem, você vende e recebe os lucros. \n
+
+ \n O risco nesse tipo de investimento é que não ocorra o que você esperava e a ação se desvalorize. Mas fique tranquilo, pois existem diversas estratégias para minimizar este risco. Você também pode contar com a ajuda de analistas experientes no mercado, orientando como escolher as melhores oportunidades e como comprar ações e vendê-las na hora certa. \n
+
+ \n Em outros países como, por exemplo, nos estados unidos a preocupação com a educação financeira é muito crescente, devido à o grande número de dívidas não pagas e a falência tanto de pessoas físicas como jurídicas. \n
+
+ \n É interessante notar, que quando o ambiente empresarial dos países é igual, seus sistemas financeiro-contábil também tendem a ser similares. As informações de alguns países, como os Estados Unidos, a informação financeira é dirigida principalmente às necessidades dos investidores e credores, e a "utilidade da decisão" é o critério para julgar sua qualidade.
+
+ \n Instituições públicas e privadas vêm estudando essa situação e maneiras de implementar programas educativos para a população, iniciando nas escolas primárias. Conforme apresentado no trabalho do Federal Reserve \n
+
+ \n Em uma pesquisa realizada na Universidade Texas AeM University-Commerce com alunos do primeiro ano da graduação, aplicou-se um questionário com 20 questões sobre finanças. Verificou-se que dos 407 respondentes, 92% dos alunos tiveram um aproveitamento abaixo de 60%; o melhor aluno acertou 80% das questões e a média de acerto foi de 34,8%. Mostrando mais uma vez a necessidade de se educar a população referente a suas fianças e gastos.  \n </string>
 </resources>

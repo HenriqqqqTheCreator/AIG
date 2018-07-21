@@ -42,7 +42,10 @@
         <activity android:name=".licao.TemaActivity" />
         <activity android:name=".licao.LicaoActivity" />
         <activity android:name=".licao.QuestActivity" />
-        <activity android:name=".licao.QuizFinalActivity"></activity>
+        <activity android:name=".licao.QuestInterActivity" />
+        <activity android:name=".licao.QuestAvanActivity" />
+        <activity android:name=".licao.QuestProvaActivity" />
+        <activity android:name=".ProvaFinalHEHEActivity"></activity>
     </application>
 
 </manifest>

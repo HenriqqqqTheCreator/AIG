@@ -53,7 +53,7 @@
                 android:textColor="@android:color/background_dark"
                 android:textSize="16sp"
                 android:typeface="normal" />
-
+<!--
             <TextView
                 android:id="@+id/tvLicaoSubTitulo"
                 android:layout_width="wrap_content"
@@ -203,7 +203,7 @@
                 android:textColor="@android:color/background_dark"
                 android:textSize="16sp"
                 android:typeface="normal" />
-
+-->
         </LinearLayout>
 
     </ScrollView>

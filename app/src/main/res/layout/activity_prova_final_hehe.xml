@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context="zapzap.tccetec.com.aig.ProvaFinalHEHEActivity">
+
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:id="@+id/txtCalmala"
+        android:fontFamily="@font/quicksand_medium"
+        android:paddingTop="10dp"
+        android:text="PARABENS!"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="24sp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/txtFazOsQuizMan"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/quicksand_medium"
+        android:foregroundGravity="center_horizontal"
+        android:lineSpacingExtra="8sp"
+        android:textAlignment="center"
+        android:text="Você chegou ao ultimo estágio. Ao acertar 50% do quiz, você ganhara um certificado que comprava a conclusão do nosso curso de \n Como Investir na Bolsa de Valores"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/btn_vamos_para_a_prova"
+        android:fontFamily="@font/quicksand_medium"
+        android:textSize="20sp"
+        android:text="VAMOS COMEÇAR!"
+        android:layout_marginTop="130dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:background="@color/colorAccent"/>
+
+</LinearLayout>

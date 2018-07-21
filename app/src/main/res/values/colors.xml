@@ -16,4 +16,5 @@
     <color name="iniciante">#0fab30</color>
     <color name="intermediario">#fd7b01</color>
     <color name="avancado">#630808</color>
+    <color name="secondFrag">#3c3e4d</color>
 </resources>
