@@ -8,7 +8,7 @@ import zapzap.tccetec.com.aig.fragment.SegundoFragment;
 
 public class TabAdapter extends FragmentStatePagerAdapter {
 
-    private String[] tituloAbas = {"Temas", "Perfil"};
+    private String[] tituloAbas = {"Temas", "Pontuações"};
 
     public TabAdapter(FragmentManager fm) {
         super(fm);

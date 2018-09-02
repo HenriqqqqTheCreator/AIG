@@ -27,8 +27,6 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 
-import org.w3c.dom.Text;
-
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
@@ -38,26 +36,17 @@ import java.util.Map;
 import zapzap.tccetec.com.aig.CadastrarActivity;
 import zapzap.tccetec.com.aig.LoginActivity;
 import zapzap.tccetec.com.aig.R;
-import zapzap.tccetec.com.aig.fragment.SegundoFragment;
 
 import static android.content.Intent.FLAG_ACTIVITY_MULTIPLE_TASK;
 
-public class QuestActivity extends AppCompatActivity {
+public class QuestProvaActivity extends AppCompatActivity {
 
     public static final String EXTRA_SCORE = "extraScore";
     private static final long COUNTDOWN_IN_MILLIS = 20000;
     public static final String KEY_SAVED_SCORE = "savedScoreIniciante";
 
-    public static final String PONTOS_URL = "http://192.168.1.238/delaroy/inserir_pontos.php";
-
-    private ProgressBar mProgressBar;
-    private TextView mTextView;
     private Button btnRespostaUm, btnRespostaDois, btnRespostaTres, btnRespostaQuatro;
     private TextView tvPergunta;
-
-    private int numeroDeRespostasCertas = 0;
-
-    private Boolean finalizado = false;
 
     private ColorStateList textColorDafaultCd;
     private CountDownTimer countDownTimer;
@@ -65,25 +54,7 @@ public class QuestActivity extends AppCompatActivity {
     private long timeLeftInMillis;
     private long backPressedTime;
 
-    //Cliques feitos
-    private int btnCliqueUm = 0;
-    private int btnCliqueDois = 0;
-    private int btnCliqueTres = 0;
-    private int btnCliqueQuatro = 0;
-
-    private final int btnUm = 0;
-    private final int btnDois = 1;
-    private final int btnTres = 2;
-    private final int btnQuatro = 3;
-
     private Context context = this;
-
-    private Intent intent;
-
-    private int perguntaNumero = 0;
-
-    private int mProgressStatus = 0;
-    private Handler mHandler = new Handler();
 
     private List<Question> questionList;
     private TextView textViewContagem;
@@ -102,9 +73,8 @@ public class QuestActivity extends AppCompatActivity {
     private boolean answered;
     private String categoriaShared;
 
-    private String emailPontos = null;
+   // private static final String SAVE_PONTUACAO = "http://192.168.1.238/delaroy/get_data.php";
 
-    //private static final String SAVE_PONTUACAO = "http://192.168.1.238/delaroy/get_data.php";
     private static final String SAVE_PONTUACAO = "http://10.0.2.2/delaroy/get_data.php";
 
     @Override
@@ -118,12 +88,6 @@ public class QuestActivity extends AppCompatActivity {
 
         SharedPreferences prefs = getSharedPreferences(TemaActivity.SHARED_PREFS, MODE_PRIVATE);
         categoriaShared = prefs.getString(TemaActivity.KEY_CATEGORIA_QUEST, "lecal");
-
-        String recebeIntent = intent.getExtras().getString(TemaActivity.KEY_CATEGORIA_QUEST);
-
-
-        SharedPreferences prefsLogin = getSharedPreferences(LoginActivity.SHARED_LOGIN_EMAIL, MODE_PRIVATE);
-        emailPontos = prefsLogin.getString(LoginActivity.KEY_LOGINAC, "nada");
 
         btnRespostaUm = findViewById(R.id.btnRespostaUm);
         btnRespostaDois = findViewById(R.id.btnRespostaDois);
@@ -140,7 +104,7 @@ public class QuestActivity extends AppCompatActivity {
         textColorDefaultRb = btnRespostaUm.getTextColors();
         textColorDafaultCd = textViewContagem.getTextColors();
 
-        QuizDbHelper dbHelper = new QuizDbHelper(this);
+        QuizDbHelperProva dbHelper = new QuizDbHelperProva(this);
         questionList = dbHelper.getAllQuestions();
         questionCountTotal = questionList.size();
         Collections.shuffle(questionList);
@@ -148,6 +112,7 @@ public class QuestActivity extends AppCompatActivity {
         showNextQuestion();
 
         clickRespostas();
+
 
     }
 
@@ -179,38 +144,57 @@ public class QuestActivity extends AppCompatActivity {
 
         } else {
 
+            SharedPreferences prefsQuest = PreferenceManager.getDefaultSharedPreferences(this);
+            SharedPreferences.Editor editorQuesta = prefsQuest.edit();
+            editorQuesta.putInt(KEY_SAVED_SCORE, score); //InputString: from the EditText
+            editorQuesta.commit();
+
+
             final Dialog dialog = new Dialog(context);
             dialog.setContentView(R.layout.custom_dialog);
             dialog.setTitle("Title...");
 
             // set the custom dialog components - text, image and button
             TextView text = dialog.findViewById(R.id.textDialogOk);
-            if (score == 0) {
+            if(score == 0){
 
-                text.setText("Wow, você não acertou nenhuma");
-            } else if (score == 1) {
+                text.setText("Pontuação insuficiente");
+            }else if(score == 1){
 
-                text.setText("'-'\n Você fez " + score + " ponto.");
-            } else if (score == 2) {
+                text.setText("Pontuação insuficiente");
+            } else if(score == 2){
 
-                text.setText("Quase lá!\n Você fez " + score + " ponto");
-            } else if (score == 3) {
+                text.setText("Pontuação insuficiente");
+            } else if(score == 3){
 
-                text.setText("Boa!\n Você fez " + score + " pontos");
-            } else if (score == 4) {
+                text.setText("Pontuação insuficiente");
+            } else if(score == 4){
 
-                text.setText("Muito bem!\n Você conseguiu acertar " + score);
-            } else if (score == 5) {
+                text.setText("Pontuação insuficiente");
+            } else if(score == 5){
 
-                text.setText("Excelente!\n Você acertou TODAS!");
+                text.setText("Parabens! \n Você acertou 50% do quiz, em breve você receberá um email com seu certificado.");
+            }else if(score == 6){
+
+                text.setText("Parabens! \n Você acertou 60% do quiz, em breve você receberá um email com seu certificado.");
+            }else if(score == 7){
+
+                text.setText("Parabens! \\n Você acertou 70% do quiz, em breve você receberá um email com seu certificado.");
+            }else if(score == 8){
+
+                text.setText("Parabens! \\n Você acertou 80% do quiz, em breve você receberá um email com seu certificado.");
+            }else if(score == 9){
+
+                text.setText("Parabens! \\n Você acertou 90% do quiz, em breve você receberá um email com seu certificado.");
+            }else if(score == 10){
+
+                text.setText("Parabens! \\n Você acertou 100% do quiz, em breve você receberá um email com seu certificado.");
             }
-
-
-            checaScoreM(score);
 
             Button dialogButton = dialog.findViewById(R.id.dialogButtonOK);
             dialogButton.setText("OK!");
             // if button is clicked, close the custom dialog
+
             dialogButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -221,33 +205,15 @@ public class QuestActivity extends AppCompatActivity {
 
                 }
             });
-            dialog.setCancelable(false);
 
             dialog.show();
 
-        }
-    }
 
-    private void checaScoreM(int scoreM) {
-
-        SharedPreferences prefsS = getSharedPreferences(SegundoFragment.SHARED_SECONDFRAGPREF, MODE_PRIVATE);
-        String restoredDataS = prefsS.getString(SegundoFragment.KEY_GET_SCOREONE, "0");
-
-        if (scoreM == 5) {
-            SharedPreferences.Editor editor = getSharedPreferences(SegundoFragment.SHARED_SECONDFRAGPREF, MODE_PRIVATE).edit();
-            editor.putString("goldenONE", "a");
-            editor.apply();
-        }
-
-        if (scoreM > 0) {
-            if (scoreM > Integer.parseInt(restoredDataS)) {
-                saveScore(scoreM);
-            }
         }
     }
 
 
-    private void startCountDown() {
+    private void startCountDown(){
 
         countDownTimer = new CountDownTimer(timeLeftInMillis, 1000) {
             @Override
@@ -263,9 +229,10 @@ public class QuestActivity extends AppCompatActivity {
                 checkAnswer(9);
             }
         }.start();
+
     }
 
-    private void updateCountDownText() {
+    private void updateCountDownText(){
 
         int minutes = (int) (timeLeftInMillis / 1000) / 60;
         int seconds = (int) (timeLeftInMillis / 1000) % 60;
@@ -274,9 +241,9 @@ public class QuestActivity extends AppCompatActivity {
 
         textViewContagem.setText(timeFormatted);
 
-        if (timeLeftInMillis < 10000) {
+        if(timeLeftInMillis < 10000){
             textViewContagem.setTextColor(Color.RED);
-        } else {
+        }else{
             textViewContagem.setTextColor(textColorDafaultCd);
         }
     }
@@ -383,47 +350,12 @@ public class QuestActivity extends AppCompatActivity {
         return super.onKeyDown(keyCode, event);
     }
 
-
-
-    private void saveScore(int mektrek) {
-
-        final int pontuacaoFinal = mektrek;
-
-        StringRequest stringRequest = new StringRequest(Request.Method.POST, PONTOS_URL,
-                new Response.Listener<String>() {
-                    @Override
-                    public void onResponse(String response) {
-                        Toast.makeText(QuestActivity.this, response, Toast.LENGTH_SHORT).show();
-                    }
-                },
-                new Response.ErrorListener() {
-                    @Override
-                    public void onErrorResponse(VolleyError error) {
-                        Toast.makeText(QuestActivity.this, error.toString(), Toast.LENGTH_LONG).show();
-                    }
-                }) {
-            @Override
-            protected Map<String, String> getParams() {
-                Map<String, String> params = new HashMap<String, String>();
-                params.put("tb_email", emailPontos);
-                params.put("tb_pontos", String.valueOf(pontuacaoFinal));
-                return params;
-            }
-
-        };
-
-        RequestQueue requestQueue = Volley.newRequestQueue(this);
-        requestQueue.add(stringRequest);
-    }
-
     @Override
     protected void onDestroy() {
         super.onDestroy();
 
-        if (countDownTimer != null) {
+        if(countDownTimer != null){
             countDownTimer.cancel();
         }
     }
 }
-
-

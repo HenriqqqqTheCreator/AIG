@@ -63,9 +63,9 @@ public class CadastrarActivity extends AppCompatActivity {
     //ip wifi dani 192.168.123.2
     //ip wifi casa 192.168.1.238
 
-//    private static final String REGISTER_URL = "http://192.168.1.238/delaroy/volleyRegister.php";
+    private static final String REGISTER_URL = "http://192.168.1.238/delaroy/volleyRegister.php";
     //private static final String REGISTER_URL = "http://10.0.2.2/delaroy/volleyRegister.php";
-    private static final String REGISTER_URL = "http://aigdevelopment.000webhostapp.com/volleyRegister.php";
+    //private static final String REGISTER_URL = "http://aigdevelopment.000webhostapp.com/volleyRegister.php";
 
     public static final String KEY_USERNAME = "username";
     public static final String KEY_PASSWORD = "password";

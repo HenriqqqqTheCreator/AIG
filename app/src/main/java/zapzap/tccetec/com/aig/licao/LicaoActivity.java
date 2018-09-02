@@ -19,19 +19,21 @@ public class LicaoActivity extends AppCompatActivity {
         setContentView(R.layout.activity_licao);
 
         tvTituloLicao = findViewById(R.id.tvLicaoTitulo);
+        /*
         tvSubUm = findViewById(R.id.tvLicaoSubTitulo);
         tvSubDois = findViewById(R.id.tvLicaoSubTituloDois);
         tvSubTres = findViewById(R.id.tvLicaoSubTituloTres);
         tvSubQuatro = findViewById(R.id.tvLicaoSubTituloQuatro);
         tvSubCinco = findViewById(R.id.tvLicaoSubTituloCinco);
-
+*/
         tvTextoLicao = findViewById(R.id.tvLicaoTexto);
+        /*
         tvTextoDois = findViewById(R.id.tvLicaoTextoDois);
         tvTextoTres = findViewById(R.id.tvLicaoTextoTres);
         tvTextoQuatro = findViewById(R.id.tvLicaoTextoQuatro);
         tvTextoCinco = findViewById(R.id.tvLicaoTextoCinco);
         tvTextoSeis = findViewById(R.id.tvLicaoTextoSeis);
-
+*/
         Intent intent = getIntent();
         String titulo = intent.getExtras().getString("TituloList");
 
@@ -55,9 +57,6 @@ public class LicaoActivity extends AppCompatActivity {
 
                 tvTextoLicao.setText(R.string.mercadodeacoes);
 
-                tvSubUm.setText("Para quem o mercado de ações é interessante?");
-                tvTextoDois.setText(R.string.paraquemomercado);
-
             }else if(idSelected == 1){
 
                 tvTextoLicao.setText(R.string.mercadodecapitais);
@@ -70,59 +69,87 @@ public class LicaoActivity extends AppCompatActivity {
 
                 tvTextoLicao.setText(R.string.porqueabolsadevalores);
 
-                tvSubUm.setText("O processo de queda");
-                tvTextoDois.setText(R.string.processodequeda);
-
-                tvSubDois.setText("Notícias da mídia");
-                tvTextoTres.setText(R.string.noticiasdamidia);
-
             }else if(idSelected == 4){
 
                 tvTextoLicao.setText(R.string.comolucrar);
-
-                tvSubUm.setText("Principais estratégias para ser bem sucedido na bolsa de valores");
-                tvTextoDois.setText(R.string.principaisestrategy);
-
-                tvSubDois.setText("Análise de ações");
-                tvTextoTres.setText(R.string.analisedeacoes);
 
             }else if(idSelected == 5){
 
                 tvTextoLicao.setText(R.string.fatoresinternos);
 
-                tvSubUm.setText("Qual a importância de delegar ações?");
-                tvTextoDois.setText(R.string.delegaracoes);
-
-                tvSubDois.setText("A importância do funcionário saber o objetivo da empresa");
-                tvTextoTres.setText(R.string.objetivoempresa);
-
-                tvSubTres.setText("Fatores externos");
-                tvTextoQuatro.setText(R.string.fatoresexternos);
-
             }else if(idSelected == 6){
 
                 tvTextoLicao.setText(R.string.tomardecisoes);
 
-                tvSubUm.setText("Reconhecendo problemas");
-                tvTextoDois.setText(R.string.reconhecerproblema);
-
-                tvSubDois.setText("Busca de informações");
-                tvTextoTres.setText(R.string.bucadeinfo);
-
-                tvSubTres.setText("Escolhas");
-                tvTextoQuatro.setText(R.string.escolha);
-
-                tvSubQuatro.setText("Compra");
-                tvTextoCinco.setText(R.string.compra);
-
-                tvSubCinco.setText("Excesso de confiança");
-                tvTextoSeis.setText(R.string.excessodeconfianca);
             }
 
         }else if(categoriaSelected.equals("intermediario")){
 
+            if(idSelected == 0){
+
+                tvTextoLicao.setText(R.string.concorrenciaNoMercado);
+
+            }else if(idSelected == 1){
+
+                tvTextoLicao.setText(R.string.contabilidade);
+
+            }else if(idSelected == 2){
+
+                tvTextoLicao.setText(R.string.conceitosgeraisdecont);
+
+            }else if(idSelected == 3){
+
+                tvTextoLicao.setText(R.string.evolucaodacont);
+
+            }else if(idSelected == 4){
+
+                tvTextoLicao.setText(R.string.finalidadedecont);
+
+            }else if(idSelected == 5){
+
+                tvTextoLicao.setText(R.string.campodeappdecont);
+
+            }else if(idSelected == 6){
+
+                tvTextoLicao.setText(R.string.principiosdecont);
+
+            }else if(idSelected == 7){
+
+                tvTextoLicao.setText(R.string.educacaofinanceira);
+
+            }
+
         }else if(categoriaSelected.equals("avançado")){
 
+            if(idSelected == 0){
+
+                tvTextoLicao.setText(R.string.tesourodireto);
+
+            }else if(idSelected == 1){
+
+                tvTextoLicao.setText(R.string.fundosimobiliarios);
+
+            }else if(idSelected == 2){
+
+                tvTextoLicao.setText(R.string.debentures);
+
+            }else if(idSelected == 3){
+
+                tvTextoLicao.setText(R.string.letrascreditoimobiliario);
+
+            }else if(idSelected == 4){
+
+                tvTextoLicao.setText(R.string.letrascreditoagronegocio);
+
+            }else if(idSelected == 5){
+
+                tvTextoLicao.setText(R.string.comoinvestiremacoes);
+
+            } else if (idSelected == 6) {
+
+                tvTextoLicao.setText("Você terminou todos os textos '0'");
+
+            }
         }
 
     }

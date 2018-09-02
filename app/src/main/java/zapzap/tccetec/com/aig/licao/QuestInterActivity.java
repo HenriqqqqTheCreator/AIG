@@ -24,10 +24,13 @@ import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 
-import org.w3c.dom.Text;
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.util.Collections;
 import java.util.HashMap;
@@ -41,23 +44,16 @@ import zapzap.tccetec.com.aig.R;
 import zapzap.tccetec.com.aig.fragment.SegundoFragment;
 
 import static android.content.Intent.FLAG_ACTIVITY_MULTIPLE_TASK;
+import static zapzap.tccetec.com.aig.fragment.SegundoFragment.SHARED_SECONDFRAGPREF;
 
-public class QuestActivity extends AppCompatActivity {
+public class QuestInterActivity extends AppCompatActivity {
 
     public static final String EXTRA_SCORE = "extraScore";
     private static final long COUNTDOWN_IN_MILLIS = 20000;
-    public static final String KEY_SAVED_SCORE = "savedScoreIniciante";
+    public static final String KEY_SAVED_SCOREINT = "savedScoreIntermediario";
 
-    public static final String PONTOS_URL = "http://192.168.1.238/delaroy/inserir_pontos.php";
-
-    private ProgressBar mProgressBar;
-    private TextView mTextView;
     private Button btnRespostaUm, btnRespostaDois, btnRespostaTres, btnRespostaQuatro;
     private TextView tvPergunta;
-
-    private int numeroDeRespostasCertas = 0;
-
-    private Boolean finalizado = false;
 
     private ColorStateList textColorDafaultCd;
     private CountDownTimer countDownTimer;
@@ -65,25 +61,11 @@ public class QuestActivity extends AppCompatActivity {
     private long timeLeftInMillis;
     private long backPressedTime;
 
-    //Cliques feitos
-    private int btnCliqueUm = 0;
-    private int btnCliqueDois = 0;
-    private int btnCliqueTres = 0;
-    private int btnCliqueQuatro = 0;
 
-    private final int btnUm = 0;
-    private final int btnDois = 1;
-    private final int btnTres = 2;
-    private final int btnQuatro = 3;
+    private String emailPontos = null;
+    public static final String PONTOS_URL = "http://192.168.1.238/delaroy/inserir_pontosinter.php";
 
     private Context context = this;
-
-    private Intent intent;
-
-    private int perguntaNumero = 0;
-
-    private int mProgressStatus = 0;
-    private Handler mHandler = new Handler();
 
     private List<Question> questionList;
     private TextView textViewContagem;
@@ -102,9 +84,9 @@ public class QuestActivity extends AppCompatActivity {
     private boolean answered;
     private String categoriaShared;
 
-    private String emailPontos = null;
 
     //private static final String SAVE_PONTUACAO = "http://192.168.1.238/delaroy/get_data.php";
+
     private static final String SAVE_PONTUACAO = "http://10.0.2.2/delaroy/get_data.php";
 
     @Override
@@ -118,9 +100,6 @@ public class QuestActivity extends AppCompatActivity {
 
         SharedPreferences prefs = getSharedPreferences(TemaActivity.SHARED_PREFS, MODE_PRIVATE);
         categoriaShared = prefs.getString(TemaActivity.KEY_CATEGORIA_QUEST, "lecal");
-
-        String recebeIntent = intent.getExtras().getString(TemaActivity.KEY_CATEGORIA_QUEST);
-
 
         SharedPreferences prefsLogin = getSharedPreferences(LoginActivity.SHARED_LOGIN_EMAIL, MODE_PRIVATE);
         emailPontos = prefsLogin.getString(LoginActivity.KEY_LOGINAC, "nada");
@@ -140,7 +119,7 @@ public class QuestActivity extends AppCompatActivity {
         textColorDefaultRb = btnRespostaUm.getTextColors();
         textColorDafaultCd = textViewContagem.getTextColors();
 
-        QuizDbHelper dbHelper = new QuizDbHelper(this);
+        QuizDbHelperInter dbHelper = new QuizDbHelperInter(this);
         questionList = dbHelper.getAllQuestions();
         questionCountTotal = questionList.size();
         Collections.shuffle(questionList);
@@ -148,6 +127,7 @@ public class QuestActivity extends AppCompatActivity {
         showNextQuestion();
 
         clickRespostas();
+
 
     }
 
@@ -205,7 +185,6 @@ public class QuestActivity extends AppCompatActivity {
                 text.setText("Excelente!\n Você acertou TODAS!");
             }
 
-
             checaScoreM(score);
 
             Button dialogButton = dialog.findViewById(R.id.dialogButtonOK);
@@ -222,8 +201,8 @@ public class QuestActivity extends AppCompatActivity {
                 }
             });
             dialog.setCancelable(false);
-
             dialog.show();
+
 
         }
     }
@@ -231,20 +210,22 @@ public class QuestActivity extends AppCompatActivity {
     private void checaScoreM(int scoreM) {
 
         SharedPreferences prefsS = getSharedPreferences(SegundoFragment.SHARED_SECONDFRAGPREF, MODE_PRIVATE);
-        String restoredDataS = prefsS.getString(SegundoFragment.KEY_GET_SCOREONE, "0");
-
+        String restoredDataS = prefsS.getString(SegundoFragment.KEY_GET_SCORETWO, "0");
         if (scoreM == 5) {
             SharedPreferences.Editor editor = getSharedPreferences(SegundoFragment.SHARED_SECONDFRAGPREF, MODE_PRIVATE).edit();
-            editor.putString("goldenONE", "a");
+            editor.putString("goldenTHREE", "a");
             editor.apply();
         }
 
         if (scoreM > 0) {
+
             if (scoreM > Integer.parseInt(restoredDataS)) {
                 saveScore(scoreM);
             }
         }
     }
+
+
 
 
     private void startCountDown() {
@@ -263,6 +244,7 @@ public class QuestActivity extends AppCompatActivity {
                 checkAnswer(9);
             }
         }.start();
+
     }
 
     private void updateCountDownText() {
@@ -384,7 +366,6 @@ public class QuestActivity extends AppCompatActivity {
     }
 
 
-
     private void saveScore(int mektrek) {
 
         final int pontuacaoFinal = mektrek;
@@ -393,13 +374,13 @@ public class QuestActivity extends AppCompatActivity {
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
-                        Toast.makeText(QuestActivity.this, response, Toast.LENGTH_SHORT).show();
+                        Toast.makeText(QuestInterActivity.this, response, Toast.LENGTH_SHORT).show();
                     }
                 },
                 new Response.ErrorListener() {
                     @Override
                     public void onErrorResponse(VolleyError error) {
-                        Toast.makeText(QuestActivity.this, error.toString(), Toast.LENGTH_LONG).show();
+                        Toast.makeText(QuestInterActivity.this, error.toString(), Toast.LENGTH_LONG).show();
                     }
                 }) {
             @Override

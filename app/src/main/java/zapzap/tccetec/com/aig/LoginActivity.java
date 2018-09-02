@@ -2,8 +2,12 @@ package zapzap.tccetec.com.aig;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -26,8 +30,13 @@ import java.util.Map;
 import zapzap.tccetec.com.aig.R;
 import zapzap.tccetec.com.aig.helper.SQLiteHandler;
 import zapzap.tccetec.com.aig.helper.SessionManager;
+import zapzap.tccetec.com.aig.licao.TemaActivity;
 
 public class LoginActivity extends AppCompatActivity {
+
+    public static final String KEY_LOGINAC = "loginText";
+    public static final String KEY_SENHAAC = "senhaText";
+    public static final String SHARED_LOGIN_EMAIL = "sharedEmail";
 
     private TextView txtCriarConta;
     private Button btnLogar;
@@ -42,12 +51,16 @@ public class LoginActivity extends AppCompatActivity {
     private EditText inputPassword;
     private SessionManager session;
     private SQLiteHandler db;
-    private ImageView mike;
+    private Button mike;
 
-    public static final String LOGIN_URL = "http://192.168.1.238/delaroy/login.php";
+    private SessionManager sessionManager;
 
-    public static final String KEY_USERNAME="email";
-    public static final String KEY_PASSWORD="password";
+    //public static final String LOGIN_URL = "http://10.0.2.2/delaroy/login.php";
+    //public static final String LOGIN_URL = "http://192.168.56.1/delaroy/login.php";
+    public static final String LOGIN_URL = "http://aigdevelopment.000webhostapp.com/login.php";
+
+    public static final String KEY_USERNAME = "email";
+    public static final String KEY_PASSWORD = "password";
 
     private String email;
     private String password;
@@ -59,6 +72,12 @@ public class LoginActivity extends AppCompatActivity {
 
         overridePendingTransition(R.anim.activity_filho_entrando, R.anim.activity_pai_saindo);
 
+
+        sessionManager = new SessionManager(this);
+        if (sessionManager.isLoggedIn()) {
+            startActivity(new Intent(LoginActivity.this, MenuActivity.class));
+        }
+
         //Intents
         abreMenu = new Intent(this, MenuActivity.class);
         abreCadastro = new Intent(this, CadastrarActivity.class);
@@ -69,25 +88,32 @@ public class LoginActivity extends AppCompatActivity {
         inputEmail = findViewById(R.id.editEmailLogarID);
         inputPassword = findViewById(R.id.editSenhaLogarID);
 
-        mike = findViewById(R.id.mikinho);
+        //mike = findViewById(R.id.btnProfs);
 
         onClickOuvintes();
     }
 
 
-    public void onClickOuvintes(){
-
+    public void onClickOuvintes() {
+        /*
         mike.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(LoginActivity.this, MenuActivity.class));
             }
-        });
+        });*/
 
         btnLogar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                userLogin();
+                email = inputEmail.getText().toString().trim();
+                password = inputPassword.getText().toString().trim();
+
+                if (email != null && password != null) {
+                    userLogin();
+                } else {
+                    Toast.makeText(LoginActivity.this, "Preencha todos os campos", Toast.LENGTH_SHORT).show();
+                }
             }
         });
 
@@ -104,33 +130,48 @@ public class LoginActivity extends AppCompatActivity {
         email = inputEmail.getText().toString().trim();
         password = inputPassword.getText().toString().trim();
 
+        SharedPreferences prefs = getSharedPreferences(SHARED_LOGIN_EMAIL, MODE_PRIVATE);
+        SharedPreferences.Editor editor = prefs.edit();
+        editor.putString(KEY_LOGINAC, email);
+        editor.apply();
+
         StringRequest stringRequest = new StringRequest(Request.Method.POST, LOGIN_URL,
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
 
-                        if(response.trim().equals("Falha")){
+                        if (response.trim().equals("Falha")) {
 
-                            Toast.makeText(LoginActivity.this, "Login ou senha incorretos",Toast.LENGTH_LONG).show();
+                            Toast.makeText(LoginActivity.this, "Login ou senha incorretos", Toast.LENGTH_LONG).show();
 
-                        }else{
+                        } else {
 
-                            Toast.makeText(LoginActivity.this,response,Toast.LENGTH_LONG).show();
+                            //Toast.makeText(LoginActivity.this,response,Toast.LENGTH_LONG).show();
                             startActivity(new Intent(LoginActivity.this, MenuActivity.class));
+
+                            SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(LoginActivity.this);
+                            SharedPreferences.Editor editor = prefs.edit();
+                            editor.putString(CadastrarActivity.KEY_TESTE_EMAIL, email);
+                            editor.putString(CadastrarActivity.KEY_TESTE_SENHA, password);
+                            editor.commit();
+
+                            sessionManager = new SessionManager(LoginActivity.this);
+                            sessionManager.setLogin(true);
+                            finish();
 
                         }
                     }
                 }, new Response.ErrorListener() {
-                    @Override
-                    public void onErrorResponse(VolleyError error) {
+            @Override
+            public void onErrorResponse(VolleyError error) {
 
-                        Toast.makeText(LoginActivity.this,error.toString(),Toast.LENGTH_LONG ).show();
+                Toast.makeText(LoginActivity.this, error.toString(), Toast.LENGTH_LONG).show();
 
-                    }
-                }){
+            }
+        }) {
             @Override
             protected Map<String, String> getParams() throws AuthFailureError {
-                Map<String,String> map = new HashMap<String,String>();
+                Map<String, String> map = new HashMap<String, String>();
                 map.put(KEY_USERNAME, email);
                 map.put(KEY_PASSWORD, password);
                 return map;

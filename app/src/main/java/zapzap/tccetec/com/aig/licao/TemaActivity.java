@@ -3,7 +3,10 @@ package zapzap.tccetec.com.aig.licao;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
+import android.widget.RelativeLayout.LayoutParams;
 import android.content.SharedPreferences;
+import android.graphics.Bitmap;
+import android.preference.PreferenceManager;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
@@ -21,19 +24,46 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.android.volley.AuthFailureError;
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+
+import zapzap.tccetec.com.aig.CadastrarActivity;
+import zapzap.tccetec.com.aig.LoginActivity;
+import zapzap.tccetec.com.aig.ProvaFinalHEHEActivity;
 import zapzap.tccetec.com.aig.R;
+import zapzap.tccetec.com.aig.fragment.SegundoFragment;
 
 public class TemaActivity extends AppCompatActivity {
 
     public static final String SHARED_PREFS = "sharedPrefs";
     public static final String KEY_HIGHSCORE = "keyHighScore";
-
-    private TextView textViewHighScore;
+    public static final String KEY_CATEGORIA_QUEST = "keyCategoria";
+    public static final String SHARED_PROVA = "sharedProva";
+    public static final String KEY_INICIAR_PROVA = "keyStart";
 
     private int highscore;
 
     private static final int REQUEST_CODE_QUIZ = 1;
+
+    private static final String GET_PONTUACAO = "http://10.0.2.2/delaroy/get_pontuacao.php";
+
+
+//    private static final String GET_PONTUACAO = "http://192.168.1.238/delaroy/get_pontuacao.php";
 
     private TextView tvTitle, tvDescription, tvCategory;
     private ImageView img;
@@ -46,6 +76,11 @@ public class TemaActivity extends AppCompatActivity {
     private Button btnQuest;
     final Context context = this;
 
+    private boolean primeiroPontoSet = false;
+
+    private ArrayList<String> students;
+    private JSONArray result;
+
     private int[] IMAGESIni = {R.drawable.mercadoacoes,
             R.drawable.mercadocapitais,
             R.drawable.comoinvestir,
@@ -54,13 +89,21 @@ public class TemaActivity extends AppCompatActivity {
             R.drawable.fatores,
             R.drawable.woman};
 
-    private int[] IMAGESInter = {R.drawable.coin_clean,
-            R.drawable.suitcase,
-            R.drawable.pricetagquatro};
+    private int[] IMAGESInter = {R.drawable.teamwork,
+            R.drawable.calculator,
+            R.drawable.archive,
+            R.drawable.graphtres,
+            R.drawable.poor,
+            R.drawable.presentationum,
+            R.drawable.notes,
+            R.drawable.businessman};
 
-    private int[] IMAGESAvan = {R.drawable.coin_clean,
-            R.drawable.suitcase,
-            R.drawable.pricetagquatro};
+    private int[] IMAGESAvan = {R.drawable.gold,
+            R.drawable.cityscape,
+            R.drawable.investment,
+            R.drawable.store,
+            R.drawable.grocery,
+            R.drawable.receipt};
 
 
     private String[] NAMESIni = {"Mercado de ações",
@@ -71,13 +114,25 @@ public class TemaActivity extends AppCompatActivity {
             "Fatores internos e externos",
             "Como tomar decisões"};
 
-    private String[] NAMESInter = {"Intermediario 1",
-            "Intermediario 2",
-            "Intermediario 3"};
+    private String[] NAMESInter = {"Concorrencia no mercado",
+            "A contabilidade",
+            "Conceitos gerais da contabilidade",
+            "Evolução da contabilidade",
+            "Finalidade da contabilidade",
+            "Campo de aplicação",
+            "Principios de contabilidade",
+            "Educação Financeira"};
 
-    private String[] NAMESAvan = {"Avançado 1",
-            "Avançado 2",
-            "Avançado 3"};
+    private String[] NAMESAvan = {"Tesouro direto",
+            "Fundos Imobiliários",
+            "Debêntures",
+            "Letras de crédito imobiliário",
+            "Letras de crédito do Agronegócio",
+            "Como investir em ações"};
+
+    private Intent categoriaQuest;
+
+    private int pontum = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -86,6 +141,7 @@ public class TemaActivity extends AppCompatActivity {
 
         listIntent = new Intent(TemaActivity.this, LicaoActivity.class);
 
+        categoriaQuest = new Intent(TemaActivity.this, QuestActivity.class);
         Usuario mUsuario = new Usuario();
 
         data = getIntent();
@@ -95,9 +151,9 @@ public class TemaActivity extends AppCompatActivity {
         btnQuest.setBackgroundColor(getColor(R.color.colorPrimaryDark));
         btnQuest.setTextColor(getColor(R.color.colorAccent));
 
-        textViewHighScore = findViewById(R.id.text_view_temaScore);
-        textViewHighScore.setHeight(0);
-        textViewHighScore.setVisibility(View.INVISIBLE);
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
+        int data = prefs.getInt(QuestActivity.KEY_SAVED_SCORE, 0); //no id: default value
+
         loadHighScore();
 
         //tvDescription = (TextView) findViewById(R.id.temaDescricao);
@@ -124,10 +180,11 @@ public class TemaActivity extends AppCompatActivity {
 
         listView.setAdapter(customAdapter);
 
-        listView.addFooterView(btnQuest);
-
         listViewLicoesListener();
 
+        listView.addFooterView(btnQuest);
+
+        students = new ArrayList<String>();
 
     }
 
@@ -169,11 +226,16 @@ public class TemaActivity extends AppCompatActivity {
 
             if (getIntentString().equals("Iniciante")) {
 
-                Intent categoriaQuest = new Intent(TemaActivity.this, QuestActivity.class);
                 categoriaQuest.putExtra("categoria", "Iniciante");
+
+                SharedPreferences prefs = getSharedPreferences(SHARED_PROVA, MODE_PRIVATE);
+                SharedPreferences.Editor editor = prefs.edit();
+                editor.putString(KEY_INICIAR_PROVA, "NO");
+                editor.apply();
 
                 TextView txtTitulo = view.findViewById(R.id.tvListView);
                 ImageView imageView = view.findViewById(R.id.ivListView);
+
 
                 txtTitulo.setText(NAMESIni[i]);
                 imageView.setImageResource(IMAGESIni[i]);
@@ -188,8 +250,9 @@ public class TemaActivity extends AppCompatActivity {
                         dialog.setTitle("Title...");
 
                         // set the custom dialog components - text, image and button
-                        TextView text = dialog.findViewById(R.id.text);
-                        text.setText("A prova será em formato de quiz e você terá somente 30 segundos!\n Preparado?");
+                        TextView text = dialog.findViewById(R.id.textDialogOk);
+                        String textOk = "Hora de testar tudo o que você leu! \n" + "Você só tera 20 segundos para escolher uma resposta\n" + "Preparado?";
+                        text.setText(textOk);
 
                         Button dialogButton = dialog.findViewById(R.id.dialogButtonOK);
                         // if button is clicked, close the custom dialog
@@ -198,8 +261,8 @@ public class TemaActivity extends AppCompatActivity {
                             public void onClick(View v) {
                                 dialog.dismiss();
 
-                                Intent intentQuiz = new Intent(TemaActivity.this, QuestActivity.class);
-                                startActivityForResult(intentQuiz, REQUEST_CODE_QUIZ);
+                                categoriaQuest.putExtra(KEY_CATEGORIA_QUEST, "Iniciante");
+                                startActivity(categoriaQuest);
                             }
                         });
 
@@ -211,6 +274,11 @@ public class TemaActivity extends AppCompatActivity {
             } else if (getIntentString().equals("Intermediario")) {
 
                 if (i < NAMESInter.length) {
+
+                    SharedPreferences prefs = getSharedPreferences(SHARED_PROVA, MODE_PRIVATE);
+                    SharedPreferences.Editor editor = prefs.edit();
+                    editor.putString(KEY_INICIAR_PROVA, "NO");
+                    editor.apply();
 
                     TextView txtTitulo = view.findViewById(R.id.tvListView);
                     ImageView imageView = view.findViewById(R.id.ivListView);
@@ -227,8 +295,9 @@ public class TemaActivity extends AppCompatActivity {
                             dialog.setTitle("Title...");
 
                             // set the custom dialog components - text, image and button
-                            TextView text = dialog.findViewById(R.id.text);
-                            text.setText("A prova será em formato de quiz e você terá somente 30 segundos!\n Preparado?");
+                            TextView text = dialog.findViewById(R.id.textDialogOk);
+                            String textOk = "Hora de testar tudo o que você leu! \n" + "Você só tera 20 segundos para escolher uma resposta\n" + "Preparado?";
+                            text.setText(textOk);
 
                             Button dialogButton = dialog.findViewById(R.id.dialogButtonOK);
                             // if button is clicked, close the custom dialog
@@ -237,7 +306,7 @@ public class TemaActivity extends AppCompatActivity {
                                 public void onClick(View v) {
                                     dialog.dismiss();
 
-                                    startActivity(new Intent(TemaActivity.this, QuestActivity.class));
+                                    startActivity(new Intent(TemaActivity.this, QuestInterActivity.class));
                                 }
                             });
 
@@ -256,7 +325,12 @@ public class TemaActivity extends AppCompatActivity {
 
             } else if (getIntentString().equals("Avançado")) {
 
-                if (i < NAMESInter.length) {
+                if (i < NAMESAvan.length) {
+
+                    SharedPreferences prefs = getSharedPreferences(SHARED_PROVA, MODE_PRIVATE);
+                    SharedPreferences.Editor editor = prefs.edit();
+                    editor.putString(KEY_INICIAR_PROVA, "NO");
+                    editor.apply();
 
                     TextView txtTitulo = view.findViewById(R.id.tvListView);
                     ImageView imageView = view.findViewById(R.id.ivListView);
@@ -274,8 +348,9 @@ public class TemaActivity extends AppCompatActivity {
                             dialog.setTitle("Title...");
 
                             // set the custom dialog components - text, image and button
-                            TextView text = dialog.findViewById(R.id.text);
-                            text.setText("A prova será em formato de quiz e você terá somente 30 segundos!\n Preparado?");
+                            TextView text = dialog.findViewById(R.id.textDialogOk);
+                            String textOk = "Hora de testar tudo o que você leu! \n" + "Você só tera 20 segundos para escolher uma resposta\n" + "Preparado?";
+                            text.setText(textOk);
 
                             Button dialogButton = dialog.findViewById(R.id.dialogButtonOK);
                             // if button is clicked, close the custom dialog
@@ -284,7 +359,7 @@ public class TemaActivity extends AppCompatActivity {
                                 public void onClick(View v) {
                                     dialog.dismiss();
 
-                                    startActivity(new Intent(TemaActivity.this, QuestActivity.class));
+                                    startActivity(new Intent(TemaActivity.this, QuestAvanActivity.class));
                                 }
                             });
 
@@ -299,14 +374,85 @@ public class TemaActivity extends AppCompatActivity {
 
                     CardView cardView = view.findViewById(R.id.cardViewCustomLayout);
                     cardView.setBackgroundColor(getResources().getColor(R.color.fundoFragment, null));
+                    cardView.setClickable(false);
+
+                    LayoutParams params = new LayoutParams(
+                            0,
+                            0
+                    );
+                    cardView.setLayoutParams(params);
 
                 }
 
+            } else if (getIntentString().equals("Prova Final")) {
+
+                SharedPreferences prefse = getSharedPreferences(SegundoFragment.SHARED_SECONDFRAGPREF, MODE_PRIVATE);
+                Boolean restoredOne = prefse.getBoolean("ta liberado", false);
+
+                if(i < 1) {
+                    if(restoredOne == true){
+                        Intent intentG = new Intent(TemaActivity.this, ProvaFinalHEHEActivity.class);
+                        intentG.putExtra("VAIDARNAO", true);
+                        startActivity(intentG);
+                    }else if(restoredOne == false){
+                        Intent intentG = new Intent(TemaActivity.this, ProvaFinalHEHEActivity.class);
+                        intentG.putExtra("VAIDARNAO", false);
+                        startActivity(intentG);
+                    }
+                    finish();
+                }else{
+                    finish();
+                }
+                /*
+                if (i < 1) {
+
+                listView.removeFooterView(btnQuest);
+
+                CardView cardView = view.findViewById(R.id.cardViewCustomLayout);
+                cardView.setBackgroundColor(getResources().getColor(R.color.fundoFragment, null));
+
+                LayoutParams params = new LayoutParams(
+                        ViewGroup.LayoutParams.MATCH_PARENT,
+                        ViewGroup.LayoutParams.MATCH_PARENT
+                );
+
+                cardView.setLayoutParams(params);
+
+                TextView txtTitulo = view.findViewById(R.id.tvListView);
+                ImageView imageView = view.findViewById(R.id.ivListView);
+
+                txtTitulo.setText("Quiz final!");
+                imageView.setImageResource(R.drawable.pen);
+
+            } else {
+
+                CardView cardView = view.findViewById(R.id.cardViewCustomLayout);
+                cardView.setBackgroundColor(getResources().getColor(R.color.fundoFragment, null));
+                cardView.setClickable(false);
+
+                LayoutParams params = new LayoutParams(
+                        0,
+                        0
+                );
+                cardView.setLayoutParams(params);
+
             }
+            */
+            //cardView.setClickable(false);
+
+            //LayoutParams params = new LayoutParams(
+            //        0,
+            //        0
+            //);
+
+            //cardView.setLayoutParams(params);
+
+        }
 
             return view;
-        }
     }
+
+}
 
     public void listViewLicoesListener() {
 
@@ -366,16 +512,10 @@ public class TemaActivity extends AppCompatActivity {
     private void loadHighScore() {
         SharedPreferences prefs = getSharedPreferences(SHARED_PREFS, MODE_PRIVATE);
         highscore = prefs.getInt(KEY_HIGHSCORE, 0);
-        textViewHighScore.setVisibility(View.VISIBLE);
-        textViewHighScore.setHeight(100);
-        textViewHighScore.setText("Pontuação máxima: " + highscore);
     }
 
     private void updateHighscore(int highscoreNew) {
         highscore = highscoreNew;
-        textViewHighScore.setVisibility(View.VISIBLE);
-        textViewHighScore.setHeight(100);
-        textViewHighScore.setText("Pontuação máxima: " + highscore);
 
         SharedPreferences prefs = getSharedPreferences(SHARED_PREFS, MODE_PRIVATE);
         SharedPreferences.Editor editor = prefs.edit();
