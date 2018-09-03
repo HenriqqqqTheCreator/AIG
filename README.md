@@ -3,4 +3,4 @@ Aprender Investir Ganhar (Learn Invest Win).
 
 AIG is an educational application that seeks to educate people with basic knowledge about economics and equity investing.
 
-![alt text](aigfotos/login.jpeg "Description goes here")
+![alt text](aigfotos/login.jpeg "AIG Login Screen")
