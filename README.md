@@ -6,10 +6,11 @@ AIG is an educational application that seeks to educate people with basic knowle
 
 Here we have aig login screen.
 
-![alt text](aigfotos/login.jpeg "AIG Login Screen")
+<img src="aigfotos/login.jpeg" width="50%"></img>
 
 
 after logged in
 
 After login, the app will display the screen with the lesson categories (Beginner, Intermediate and Advanced).
-<img src="aigfotos/categorias.jpeg" width="5%"></img>
+
+<img src="aigfotos/categorias.jpeg" width="50%"></img>
