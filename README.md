@@ -19,3 +19,13 @@ After login, the app will display the screen with the lesson categories (Beginne
 After choosing one of the categories, a list with all the lessons of the categories will be presented (it is recommended to follow them in order), at the end of the list there will be a quiz for the user to practice what he has read.
 
 <img src="aigfotos/licaointermed.jpeg" width="50%"></img>
+
+
+Choosing one of the texts will be displayed:
+
+<img src="aigfotos/licao.jpeg" width="50%"></img>
+
+
+Quiz at the end of the list
+
+<img src="aigfotos/quiz.jpeg" width="50%"></img>
