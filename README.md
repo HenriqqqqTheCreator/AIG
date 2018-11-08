@@ -1,31 +1,54 @@
-# AIG
-Aprender Investir Ganhar (Learn Invest Win).
-
-AIG is an educational application that seeks to educate people with basic knowledge about economics and equity investing.
 
 
-Here we have aig login screen.
+[![AIG](https://uploaddeimagens.com.br/images/001/715/840/full/aig-logo.jpg?1541707813)]
+[![ETEC | Centro Paula Souza](https://uploaddeimagens.com.br/images/001/715/876/full/etec.jpg?1541708946)](https://www.cps.sp.gov.br) 
 
-<img src="aigfotos/login.jpeg" width="50%"></img>
+    Este projeto é meu trabalho de conclusão de curso, realizado na ETEC de Itaquera.
+AIG é um aplicativo que visa educar as pessoas sobre quais são e como realizar investimentos na bolsa de valores.
 
-
-after logged in
-
-After login, the app will display the screen with the lesson categories (Beginner, Intermediate and Advanced).
-
-<img src="aigfotos/categorias.jpeg" width="50%"></img>
-
-
-After choosing one of the categories, a list with all the lessons of the categories will be presented (it is recommended to follow them in order), at the end of the list there will be a quiz for the user to practice what he has read.
-
-<img src="aigfotos/licaointermed.jpeg" width="50%"></img>
+  - Textos descomplicados e fáceis de ler
+  - Jogo de quiz para testar os conhecimentos do usuário
+  - Rápido e fácil
+  - Funciona offline!
 
 
-Choosing one of the texts will be displayed:
 
-<img src="aigfotos/licao.jpeg" width="50%"></img>
+# Como funciona
 
+### 1. Tela de Login
+&nbsp;
+[![ETEC | Centro Paula Souza](https://uploaddeimagens.com.br/images/001/715/853/full/login.jpeg?1541708225)](https://www.cps.sp.gov.br) 
+&nbsp;
+### 2. Tela de Cadastro
+&nbsp;
+[![ETEC | Centro Paula Souza](https://uploaddeimagens.com.br/images/001/715/948/full/45688007_2191957244406443_3021870420312719360_n.jpg?1541710884)](https://www.cps.sp.gov.br) 
+&nbsp;
+### 3. Tela de Menu
+&nbsp;
+[![ETEC | Centro Paula Souza](https://uploaddeimagens.com.br/images/001/715/854/full/categorias.jpeg?1541708297)](https://www.cps.sp.gov.br) 
+&nbsp;
+### 4. Tela com as lições (Iniciante, Intermediario ou avançado)
+&nbsp;
+#### Lições Iniciantes
+&nbsp;
+[![ETEC | Centro Paula Souza](https://uploaddeimagens.com.br/images/001/716/010/full/licaointermed.jpeg?1541713356)](https://www.cps.sp.gov.br) 
+&nbsp;
+&nbsp;
+#### Lições Intermediárias 
+&nbsp;
+[![ETEC | Centro Paula Souza](https://uploaddeimagens.com.br/images/001/716/012/full/intermediario.jpeg?1541713365)](https://www.cps.sp.gov.br) 
+&nbsp;
+&nbsp;
+#### Lições Avançadas
+&nbsp;
+[![ETEC | Centro Paula Souza](https://uploaddeimagens.com.br/images/001/716/013/full/avancado.jpeg?1541713366)](https://www.cps.sp.gov.br) 
+&nbsp;
+### 5. Tela de com conteúdo das lições
+&nbsp;
+[![ETEC | Centro Paula Souza](https://uploaddeimagens.com.br/images/001/715/856/full/licao.jpeg?1541708300)](https://www.cps.sp.gov.br) 
+&nbsp;
+### 6. Tela do quiz no final de cada categoria
+&nbsp;
+[![ETEC | Centro Paula Souza](https://uploaddeimagens.com.br/images/001/716/032/full/quiz.jpeg?1541714191)](https://www.cps.sp.gov.br) 
+&nbsp;
 
-Quiz at the end of the list
-
-<img src="aigfotos/quiz.jpeg" width="50%"></img>
