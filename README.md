@@ -15,17 +15,21 @@ AIG é um aplicativo que visa educar as pessoas sobre quais são e como realizar
 
 # Como funciona
 
-### 1. Tela de Login
+### 0. Tela de Login
 &nbsp;
 [![ETEC | Centro Paula Souza](https://uploaddeimagens.com.br/images/001/715/853/full/login.jpeg?1541708225)](https://www.cps.sp.gov.br) 
 &nbsp;
-### 2. Tela de Cadastro
+### 1. Tela de Cadastro
 &nbsp;
 [![ETEC | Centro Paula Souza](https://uploaddeimagens.com.br/images/001/715/948/full/45688007_2191957244406443_3021870420312719360_n.jpg?1541710884)](https://www.cps.sp.gov.br) 
 &nbsp;
-### 3. Tela de Menu
+### 2. Tela de Menu
 &nbsp;
 [![ETEC | Centro Paula Souza](http://uploaddeimagens.com.br/images/001/858/394/full/WhatsApp_Image_2019-01-26_at_19.22.04%281%29.jpeg?1548537886)](https://www.cps.sp.gov.br) 
+&nbsp;
+### 3. Tela de Pontuações
+&nbsp;
+[![ETEC | Centro Paula Souza](http://uploaddeimagens.com.br/imagens/whatsapp_image_2019-01-26_at_19-22-04-2-jpeg)](https://www.cps.sp.gov.br) 
 &nbsp;
 ### 4. Tela com as lições (Iniciante, Intermediario ou avançado)
 &nbsp;
