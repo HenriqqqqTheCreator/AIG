@@ -25,7 +25,7 @@ AIG é um aplicativo que visa educar as pessoas sobre quais são e como realizar
 &nbsp;
 ### 3. Tela de Menu
 &nbsp;
-[![ETEC | Centro Paula Souza](https://uploaddeimagens.com.br/images/001/715/854/full/categorias.jpeg?1541708297)](https://www.cps.sp.gov.br) 
+[![ETEC | Centro Paula Souza](http://uploaddeimagens.com.br/images/001/858/394/full/WhatsApp_Image_2019-01-26_at_19.22.04%281%29.jpeg?1548537886)](https://www.cps.sp.gov.br) 
 &nbsp;
 ### 4. Tela com as lições (Iniciante, Intermediario ou avançado)
 &nbsp;
