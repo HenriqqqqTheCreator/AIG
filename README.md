@@ -17,7 +17,7 @@ AIG é um aplicativo que visa educar as pessoas sobre quais são e como realizar
 
 ### 0. Tela de Login
 &nbsp;
-[![ETEC | Centro Paula Souza](https://uploaddeimagens.com.br/images/001/715/853/full/login.jpeg?1541708225)](https://www.cps.sp.gov.br) 
+[![ETEC | Centro Paula Souza](http://uploaddeimagens.com.br/images/001/858/393/full/WhatsApp_Image_2019-01-26_at_19.22.04.jpeg?1548537885)](https://www.cps.sp.gov.br) 
 &nbsp;
 ### 1. Tela de Cadastro
 &nbsp;
