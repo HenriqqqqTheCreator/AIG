@@ -25,9 +25,13 @@ AIG é um aplicativo que visa educar as pessoas sobre quais são e como realizar
 &nbsp;
 ### 2. Tela de Menu
 &nbsp;
+Na seleção de cada categoria, sera exibida todos os textos e no final de cada lista haverá um quiz para testar tudo o que você leu.
+&nbsp;
 [![ETEC | Centro Paula Souza](http://uploaddeimagens.com.br/images/001/858/394/full/WhatsApp_Image_2019-01-26_at_19.22.04%281%29.jpeg?1548537886)](https://www.cps.sp.gov.br) 
 &nbsp;
 ### 3. Tela de Pontuações
+&nbsp;
+Aqui consta as pontuações realizadas nos quizes de cada categoria.
 &nbsp;
 [![ETEC | Centro Paula Souza](http://uploaddeimagens.com.br/images/001/858/395/full/WhatsApp_Image_2019-01-26_at_19.22.04%282%29.jpeg?1548537888)](https://www.cps.sp.gov.br) 
 &nbsp;
@@ -52,6 +56,8 @@ AIG é um aplicativo que visa educar as pessoas sobre quais são e como realizar
 [![ETEC | Centro Paula Souza](https://uploaddeimagens.com.br/images/001/715/856/full/licao.jpeg?1541708300)](https://www.cps.sp.gov.br) 
 &nbsp;
 ### 6. Tela do quiz no final de cada categoria
+&nbsp;
+No final da lista de lições de cada categoria, haverá um quiz com perguntas correspondentes ao tema de cada categoria.
 &nbsp;
 [![ETEC | Centro Paula Souza](https://uploaddeimagens.com.br/images/001/716/032/full/quiz.jpeg?1541714191)](https://www.cps.sp.gov.br) 
 &nbsp;
